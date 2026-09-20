@@ -1,0 +1,58 @@
+advsunilkumar/
+├── index.html
+│
+├── about/
+│   └── index.html
+│
+├── practice-areas/
+│   ├── index.html
+│   ├── banking-recovery/
+│   │   └── index.html
+│   ├── high-court-writ/
+│   │   └── index.html
+│   ├── civil-commercial/
+│   │   └── index.html
+│   ├── property/
+│   │   └── index.html
+│   ├── criminal-ni-act/
+│   │   └── index.html
+│   ├── arbitration/
+│   │   └── index.html
+│   └── legal-drafting-advisory/
+│       └── index.html
+│
+├── courts/
+│   └── index.html
+│
+├── featured/
+│   └── index.html
+│
+├── insights/
+│   └── index.html
+│
+├── contact/
+│   └── index.html
+│
+├── assets/
+│   ├── images/
+│   │   └── .gitkeep
+│   ├── icons/
+│   │   └── .gitkeep
+│   └── fonts/
+│       └── .gitkeep
+│
+├── css/
+│   ├── reset.css
+│   ├── variables.css
+│   ├── global.css
+│   ├── components.css
+│   └── pages.css
+│
+├── js/
+│   ├── main.js
+│   └── navigation.js
+│
+├── robots.txt
+├── sitemap.xml
+├── README.md
+└── .gitignore
