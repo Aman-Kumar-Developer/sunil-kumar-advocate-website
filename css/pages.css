@@ -89,6 +89,7 @@ svg {
 
 img {
     height: auto;
+    vertical-align: middle;
 }
 
 a {
@@ -486,17 +487,14 @@ h3 {
 }
 
 .hero__inner {
-    width: min(
-        calc(100% - 120px),
-        var(--content-width)
-    );
+    width: 100%;
 
     min-height: 475px;
 
-    margin-inline: auto;
+    margin: 0;
 
     display: grid;
-    grid-template-columns: 43% 57%;
+    grid-template-columns: 32% 68%;
 
     position: relative;
 }
@@ -512,7 +510,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
 
-    padding: 48px 30px 48px 0;
+    padding: 48px 30px 48px max(60px, calc((100vw - var(--content-width)) / 2));
 }
 
 .hero__title {
@@ -535,7 +533,7 @@ h3 {
     color: var(--color-charcoal);
 
     font-family: var(--font-display);
-    font-size: 19px;
+    font-size: 20px;
     line-height: 1.25;
 }
 
@@ -546,7 +544,7 @@ h3 {
 
     color: #383533;
 
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.55;
 }
 
@@ -601,16 +599,16 @@ h3 {
 
 .hero-quote {
     position: absolute;
-    z-index: 4;
+    z-index: 5;
 
     right: 20px;
-    bottom: 77px;
+    bottom: 91px;
 
-    width: 210px;
+    width: 220px;
 
-    padding: 19px 17px;
+    padding: 20px 18px;
 
-    background: rgba(255, 253, 249, 0.92);
+    background: rgba(255, 253, 249, 0.94);
 
     box-shadow:
         0 12px 35px rgba(0, 0, 0, 0.07);
@@ -652,9 +650,9 @@ h3 {
 
 .hero__keywords {
     position: absolute;
-    z-index: 4;
+    z-index: 5;
 
-    right: 23px;
+    right: 22px;
     bottom: 12px;
 
     display: flex;
@@ -662,9 +660,12 @@ h3 {
 
     color: var(--color-charcoal);
 
-    font-size: 8px;
+    font-size: 9px;
+    font-weight: 500;
     letter-spacing: 0.25em;
-    line-height: 1.8;
+    line-height: 1.75;
+
+    text-align: left;
 }
 
 
@@ -800,7 +801,7 @@ h3 {
 
     color: #3e3b39;
 
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.55;
 }
 
@@ -853,7 +854,7 @@ h3 {
 
     color: var(--color-charcoal);
 
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.35;
 }
 
@@ -1061,7 +1062,7 @@ h3 {
     color: var(--color-charcoal);
 
     font-family: var(--font-body);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.3;
 }
@@ -1076,7 +1077,7 @@ h3 {
     color: var(--color-burgundy);
 
     font-family: var(--font-display);
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .practice-card__link:hover {
@@ -1177,7 +1178,7 @@ h3 {
 
     color: var(--color-burgundy);
 
-    font-size: 8px;
+    font-size: 10px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
@@ -1188,7 +1189,7 @@ h3 {
     color: var(--color-charcoal);
 
     font-family: var(--font-body);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.35;
 }
@@ -1199,7 +1200,7 @@ h3 {
 
     color: var(--color-muted);
 
-    font-size: 9px;
+    font-size: 11px;
     line-height: 1.45;
 }
 
@@ -1667,7 +1668,11 @@ h3 {
 
 
     .hero__inner {
-        grid-template-columns: 45% 55%;
+        grid-template-columns: 38% 62%;
+    }
+
+    .hero__content {
+        padding-left: 60px;
     }
 
     .hero__title {
@@ -1902,10 +1907,7 @@ h3 {
     .hero__content {
         order: 2;
 
-        padding:
-            22px
-            20px
-            27px;
+        padding: 22px 20px 27px;
 
         background: var(--color-ivory-light);
     }
@@ -1916,6 +1918,48 @@ h3 {
                 180deg,
                 rgba(248, 245, 239, 0) 60%,
                 rgba(248, 245, 239, 0.2)
+            );
+    }
+
+    .hero__visual::after {
+        content: "";
+
+        position: absolute;
+        z-index: 3;
+
+        right: 0;
+        bottom: 0;
+
+        width: 220px;
+        height: 155px;
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(248, 245, 239, 0) 0%,
+                rgba(248, 245, 239, 0.22) 35%,
+                rgba(248, 245, 239, 0.72) 100%
+            );
+
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+        pointer-events: none;
+
+        mask-image:
+            linear-gradient(
+                to top,
+                #000 0%,
+                #000 45%,
+                transparent 100%
+            );
+
+        -webkit-mask-image:
+            linear-gradient(
+                to top,
+                #000 0%,
+                #000 45%,
+                transparent 100%
             );
     }
 
@@ -2312,241 +2356,4 @@ h3 {
         scroll-behavior: auto !important;
     }
 
-}
-
-
-/* ============================================================
-   HOMEPAGE — READABILITY REFINEMENT
-   Keep the approved layout intact while increasing small text
-   for desktop readability.
-   ============================================================ */
-
-
-/* ------------------------------------------------------------
-   Desktop readability
-   ------------------------------------------------------------ */
-
-@media (min-width: 768px) {
-
-    /* Small section labels */
-    .eyebrow {
-        font-size: 10px;
-    }
-
-    /* Header navigation */
-    .main-navigation__link {
-        font-size: 12px;
-    }
-
-    /* Header branding */
-    .site-brand__name {
-        font-size: 13px;
-    }
-
-    .site-brand__subtitle {
-        font-size: 10px;
-    }
-
-    /* Hero supporting text */
-    .hero__description {
-        font-size: 13px;
-        line-height: 1.55;
-    }
-
-    .hero__tagline {
-        font-size: 20px;
-    }
-
-    /* Hero quote */
-    .hero-quote__text {
-        font-size: 16px;
-    }
-
-    .hero-quote__author {
-        font-size: 12px;
-    }
-
-    .hero__keywords {
-        font-size: 10px;
-    }
-
-    /* Practice strip */
-    .practice-strip__label {
-        font-size: 12px;
-    }
-
-    /* About section */
-    .about-preview__copy p:not(.eyebrow) {
-        font-size: 13px;
-    }
-
-    .about-highlight > span:last-child {
-        font-size: 12px;
-    }
-
-    /* Practice Areas */
-    .section-heading-row__description {
-        font-size: 13px;
-    }
-
-    .practice-card h3 {
-        font-size: 12px;
-    }
-
-    .practice-card__link {
-        font-size: 11px;
-    }
-
-    /* Featured / Insights */
-    .section-heading-row--compact .section-heading-row__description {
-        font-size: 11px;
-    }
-
-    .content-card__meta {
-        font-size: 10px;
-    }
-
-    .content-card h3 {
-        font-size: 12px;
-    }
-
-    .content-card p {
-        font-size: 11px;
-    }
-
-    /* Contact CTA */
-    .contact-cta p {
-        font-size: 12px;
-    }
-
-    /* Footer */
-    .site-footer__brand-text small {
-        font-size: 10px;
-    }
-
-    .site-footer__brand > p {
-        font-size: 12px;
-    }
-
-    .site-footer__column nav a {
-        font-size: 11px;
-    }
-
-    .footer-contact-item {
-        font-size: 11px;
-    }
-
-    .site-footer__bottom p,
-    .site-footer__legal {
-        font-size: 10px;
-    }
-}
-
-
-/* ------------------------------------------------------------
-   Desktop section descriptions
-   ------------------------------------------------------------ */
-
-@media (min-width: 768px) {
-
-    .section-heading-row__description,
-    .section-heading-row--compact .section-heading-row__description {
-        line-height: 1.5;
-    }
-
-    .practice-card__content {
-        padding-top: 10px;
-        padding-bottom: 11px;
-    }
-
-    .content-card__content {
-        padding: 11px;
-    }
-}
-
-
-/* ------------------------------------------------------------
-   Mobile readability
-   Do not simply inherit the desktop increases.
-   Mobile needs its own controlled scale.
-   ------------------------------------------------------------ */
-
-@media (max-width: 767px) {
-
-    .eyebrow {
-        font-size: 9px;
-    }
-
-    .site-brand__name {
-        font-size: 10px;
-    }
-
-    .site-brand__subtitle {
-        font-size: 8px;
-    }
-
-    .hero__description {
-        font-size: 12px;
-    }
-
-    .practice-strip__label {
-        font-size: 11px;
-    }
-
-    .about-preview__copy p:not(.eyebrow) {
-        font-size: 12px;
-    }
-
-    .about-highlight > span:last-child {
-        font-size: 11px;
-    }
-
-    .section-heading-row__description {
-        font-size: 11px;
-    }
-
-    .practice-card h3 {
-        font-size: 11px;
-    }
-
-    .practice-card__link {
-        font-size: 10px;
-    }
-
-    .content-card__meta {
-        font-size: 9px;
-    }
-
-    .content-card h3 {
-        font-size: 11px;
-    }
-
-    .content-card p {
-        font-size: 10px;
-    }
-
-    .contact-cta p {
-        font-size: 11px;
-    }
-
-    .site-footer__brand-text small {
-        font-size: 9px;
-    }
-
-    .site-footer__brand > p {
-        font-size: 11px;
-    }
-
-    .site-footer__column nav a {
-        font-size: 11px;
-    }
-
-    .footer-contact-item {
-        font-size: 10px;
-    }
-
-    .site-footer__bottom p,
-    .site-footer__legal {
-        font-size: 10px;
-    }
 }
