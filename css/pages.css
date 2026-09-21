@@ -479,7 +479,7 @@ h3 {
 .hero {
     position: relative;
 
-    min-height: 475px;
+    min-height: max(400px, calc(100vh - var(--header-height) - 128px));
 
     background: var(--color-ivory-light);
 
@@ -489,7 +489,7 @@ h3 {
 .hero__inner {
     width: 100%;
 
-    min-height: 475px;
+    min-height: max(400px, calc(100vh - var(--header-height) - 128px));
 
     margin: 0;
 
@@ -510,42 +510,42 @@ h3 {
     flex-direction: column;
     justify-content: center;
 
-    padding: 48px 30px 48px max(60px, calc((100vw - var(--content-width)) / 2));
+    padding: 40px 30px 40px max(60px, calc((100vw - var(--content-width)) / 2));
 }
 
 .hero__title {
-    max-width: 520px;
+    max-width: 510px;
 
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 
     color: var(--color-burgundy);
 
     font-family: var(--font-display);
-    font-size: clamp(48px, 4.8vw, 68px);
+    font-size: clamp(42px, 4.3vw, 60px);
     font-weight: 500;
     letter-spacing: -0.025em;
-    line-height: 0.94;
+    line-height: 0.95;
 }
 
 .hero__tagline {
-    margin-bottom: 17px;
+    margin-bottom: 15px;
 
     color: var(--color-charcoal);
 
     font-family: var(--font-display);
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.25;
 }
 
 .hero__description {
     max-width: 465px;
 
-    margin-bottom: 21px;
+    margin-bottom: 19px;
 
     color: #383533;
 
     font-size: 13px;
-    line-height: 1.55;
+    line-height: 1.52;
 }
 
 .hero__actions {
@@ -560,7 +560,7 @@ h3 {
 .hero__visual {
     position: relative;
 
-    min-height: 475px;
+    min-height: max(400px, calc(100vh - var(--header-height) - 128px));
 
     overflow: hidden;
 }
@@ -592,6 +592,29 @@ h3 {
 
     object-fit: cover;
     object-position: center center;
+}
+
+/* Bottom-right corner scrim: fades the photo behind the quote
+   card and keyword list so that dark text stays legible.
+   Fixed-size ellipse (not container-relative) so it looks the
+   same on every screen, with no hard edge anywhere. */
+.hero__visual::after {
+    content: "";
+
+    position: absolute;
+    z-index: 4;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            ellipse 620px 520px at 100% 100%,
+            rgba(248, 245, 239, 0.88) 0%,
+            rgba(248, 245, 239, 0.55) 35%,
+            rgba(248, 245, 239, 0.2) 65%,
+            rgba(248, 245, 239, 0) 100%
+        );
+
+    pointer-events: none;
 }
 
 
@@ -707,10 +730,6 @@ h3 {
     text-align: center;
 
     border-right: 1px solid var(--color-border);
-
-    transition:
-        background-color var(--transition-fast),
-        color var(--transition-fast);
 }
 
 .practice-strip__item:first-child {
@@ -719,10 +738,6 @@ h3 {
 
 .practice-strip__item:last-child {
     border-right: 0;
-}
-
-.practice-strip__item:hover {
-    background: var(--color-ivory);
 }
 
 .practice-strip__icon {
@@ -774,7 +789,7 @@ h3 {
     grid-template-columns: 1.1fr 0.9fr;
 
     padding:
-        34px
+        44px
         clamp(50px, 8vw, 115px)
         38px
         max(60px, calc((100vw - var(--content-width)) / 2));
@@ -1921,46 +1936,10 @@ h3 {
             );
     }
 
+    /* No corner scrim on mobile — the quote card has its own
+       solid background, and the keyword list is hidden here. */
     .hero__visual::after {
-        content: "";
-
-        position: absolute;
-        z-index: 3;
-
-        right: 0;
-        bottom: 0;
-
-        width: 220px;
-        height: 155px;
-
-        background:
-            linear-gradient(
-                180deg,
-                rgba(248, 245, 239, 0) 0%,
-                rgba(248, 245, 239, 0.22) 35%,
-                rgba(248, 245, 239, 0.72) 100%
-            );
-
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-
-        pointer-events: none;
-
-        mask-image:
-            linear-gradient(
-                to top,
-                #000 0%,
-                #000 45%,
-                transparent 100%
-            );
-
-        -webkit-mask-image:
-            linear-gradient(
-                to top,
-                #000 0%,
-                #000 45%,
-                transparent 100%
-            );
+        content: none;
     }
 
     .hero__image {
