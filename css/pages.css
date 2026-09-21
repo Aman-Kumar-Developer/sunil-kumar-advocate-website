@@ -247,7 +247,7 @@ h3 {
 .site-brand__subtitle {
     color: var(--color-charcoal);
 
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.2;
 }
 
@@ -1150,7 +1150,7 @@ h3 {
 .section-heading-row--compact .section-heading-row__description {
     max-width: 410px;
 
-    font-size: 10px;
+    font-size: 12px;
 }
 
 
@@ -1282,7 +1282,11 @@ h3 {
         var(--content-width)
     );
 
-    min-height: 95px;
+    /* Single source of truth for the decoration's width, so the
+       button offset below always stays in sync with it. */
+    --decor-width: clamp(280px, 30vw, 460px);
+
+    min-height: 132px;
 
     margin-inline: auto;
 
@@ -1290,7 +1294,7 @@ h3 {
     align-items: center;
     justify-content: space-between;
 
-    padding-block: 20px;
+    padding-block: 26px;
 }
 
 .contact-cta__content {
@@ -1305,7 +1309,10 @@ h3 {
 
     font-family: var(--font-display);
     font-size: 28px;
+    font-weight: 500;
     line-height: 1;
+
+    white-space: nowrap;
 }
 
 .contact-cta p {
@@ -1313,32 +1320,56 @@ h3 {
 
     color: rgba(255, 255, 255, 0.85);
 
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .contact-cta__inner > .button {
     position: relative;
     z-index: 2;
+    flex-shrink: 0;
 
-    min-width: 116px;
+    /* Clears the decoration's opaque zone (see mask below) with a
+       comfortable gap, and rescales automatically with it. */
+    margin-right: calc(var(--decor-width) * 0.82 + 28px);
 }
 
 .contact-cta__decoration {
     position: absolute;
+    top: 0;
     right: 0;
     bottom: 0;
 
-    width: 220px;
+    z-index: 1;
+
+    width: var(--decor-width);
+
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.contact-cta__decoration img {
+    width: 100%;
     height: 100%;
 
-    opacity: 0.15;
+    object-fit: cover;
+    object-position: center 22%;
 
-    background:
-        radial-gradient(
-            circle at 80% 60%,
-            rgba(255, 255, 255, 0.6),
-            transparent 35%
-        );
+    opacity: 0.80;
+
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 1) 22%,
+        rgba(0, 0, 0, 1) 78%,
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 1) 22%,
+        rgba(0, 0, 0, 1) 78%,
+        transparent 100%
+    );
 }
 
 
@@ -1413,7 +1444,7 @@ h3 {
     color: var(--color-burgundy);
 
     font-family: var(--font-display);
-    font-size: 13px;
+    font-size: 17px;
     font-weight: 500;
     line-height: 1;
 }
@@ -1421,7 +1452,7 @@ h3 {
 .site-footer__brand-text small {
     margin-top: 3px;
 
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .site-footer__brand > p {
@@ -1432,7 +1463,7 @@ h3 {
 
     color: var(--color-muted);
 
-    font-size: 10px;
+    font-size: 12px;
 }
 
 
@@ -1476,7 +1507,7 @@ h3 {
     color: var(--color-burgundy);
 
     font-family: var(--font-body);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -1489,7 +1520,7 @@ h3 {
 .site-footer__column nav a {
     color: var(--color-charcoal);
 
-    font-size: 10px;
+    font-size: 12px;
 
     transition:
         color var(--transition-fast);
@@ -1519,7 +1550,7 @@ h3 {
 
     color: var(--color-charcoal);
 
-    font-size: 9px;
+    font-size: 12px;
     line-height: 1.45;
 }
 
@@ -1605,7 +1636,7 @@ h3 {
 
     color: var(--color-muted);
 
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .site-footer__legal {
@@ -1716,6 +1747,11 @@ h3 {
         gap: 25px;
     }
 
+
+    .contact-cta__inner {
+        --decor-width: clamp(200px, 26vw, 320px);
+    }
+
 }
 
 
@@ -1784,7 +1820,7 @@ h3 {
     }
 
     .site-brand__subtitle {
-        font-size: 8px;
+        font-size: 9px;
     }
 
     .menu-toggle {
@@ -2190,19 +2226,9 @@ h3 {
        Contact CTA
        -------------------------------------------------------- */
 
-    .contact-cta__inner {
-        min-height: auto;
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-
-        padding-block: 25px;
-    }
-
     .contact-cta h2 {
         font-size: 28px;
+        white-space: normal;
     }
 
     .contact-cta p {
@@ -2211,6 +2237,11 @@ h3 {
 
     .contact-cta__inner > .button {
         width: auto;
+        margin-right: 0;
+    }
+
+    .contact-cta__decoration {
+        display: none;
     }
 
 
