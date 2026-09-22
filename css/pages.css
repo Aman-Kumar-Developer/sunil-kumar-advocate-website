@@ -966,12 +966,10 @@ h3 {
    10. PRACTICE AREAS
    ============================================================ */
 
-.practice-areas-preview {
-    padding-block: 35px 42px;
-
-    background: var(--color-ivory-light);
-
-    border-bottom: 1px solid var(--color-border-light);
+   .practice-areas-preview .section-container {
+    width: calc(100% - 32px);
+    max-width: none;
+    margin-inline: auto;
 }
 
 .section-heading-row {
@@ -1104,11 +1102,10 @@ h3 {
 
 /* ============================================================
    11. FEATURED + INSIGHTS
-   ============================================================ */
+============================================================ */
 
 .featured-insights {
     padding-block: 30px 35px;
-
     background: var(--color-ivory-light);
 }
 
@@ -1119,7 +1116,6 @@ h3 {
 
 .content-column {
     min-width: 0;
-
     padding-inline: 20px;
 }
 
@@ -1135,44 +1131,74 @@ h3 {
     padding-left: 30px;
 }
 
+
+/* ------------------------------------------------------------
+   Section heading
+------------------------------------------------------------ */
+
 .section-heading-row--compact {
     align-items: flex-start;
-
     margin-bottom: 15px;
 }
 
 .section-heading-row--compact h2 {
     max-width: 420px;
-
     font-size: 27px;
 }
 
 .section-heading-row--compact .section-heading-row__description {
     max-width: 410px;
-
     font-size: 12px;
 }
 
 
-/* Content cards */
+/* ------------------------------------------------------------
+   Content cards
+------------------------------------------------------------ */
 
 .content-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
+
+    /*
+     * Six cards are intentionally displayed as:
+     *
+     * Desktop / Tablet
+     * 1  2  3
+     * 4  5  6
+     *
+     * Mobile
+     * 1  2
+     * 3  4
+     * 5  6
+     */
 }
 
 .content-card {
     min-width: 0;
 
-    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
 
+    background: var(--color-white);
     border: 1px solid var(--color-border);
+
+    overflow: hidden;
+}
+
+.content-card__content {
+    min-width: 0;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px;
 }
 
 .content-card__image {
     aspect-ratio: 1.55 / 1;
-
     overflow: hidden;
 }
 
@@ -1183,9 +1209,10 @@ h3 {
     object-fit: cover;
 }
 
-.content-card__content {
-    padding: 10px;
-}
+
+/* ------------------------------------------------------------
+   Card typography
+------------------------------------------------------------ */
 
 .content-card__meta {
     display: block;
@@ -1195,7 +1222,10 @@ h3 {
     color: var(--color-burgundy);
 
     font-size: 10px;
+    font-weight: 600;
     letter-spacing: 0.08em;
+    line-height: 1.25;
+
     text-transform: uppercase;
 }
 
@@ -1221,7 +1251,21 @@ h3 {
 }
 
 
-/* Future empty state */
+/* ------------------------------------------------------------
+   Card link
+------------------------------------------------------------ */
+
+.content-card .text-link {
+    margin-top: auto;
+    padding-top: 9px;
+
+    font-size: 11px;
+}
+
+
+/* ------------------------------------------------------------
+   Legacy empty state
+------------------------------------------------------------ */
 
 .content-card--empty {
     grid-column: 1 / -1;
@@ -1239,7 +1283,6 @@ h3 {
     place-items: center;
 
     background: #eee9e1;
-
     color: var(--color-burgundy);
 }
 
@@ -2174,55 +2217,123 @@ h3 {
         border-radius: 4px;
     }
 
-    /* --------------------------------------------------------
-       Featured / Insights
-       -------------------------------------------------------- */
+/* --------------------------------------------------------
+   Featured / Insights
+-------------------------------------------------------- */
 
-    .featured-insights {
-        padding-block: 25px 30px;
-    }
+.featured-insights {
+    padding-block: 25px 30px;
+}
 
-    .featured-insights__grid {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
+.featured-insights .section-container {
+    width: calc(100% - 32px);
+    max-width: none;
+    margin-inline: auto;
+}
 
-    .content-column,
-    .content-column:first-child,
-    .content-column:last-child {
-        padding-inline: 0;
+.featured-insights__grid {
+    width: 100%;
+}
 
-        border: 0;
-    }
+.content-column,
+.content-column:first-child,
+.content-column:last-child {
+    width: 100%;
+    min-width: 0;
+    padding-inline: 0;
+}
 
-    .content-column:first-child {
-        padding-bottom: 30px;
+.content-cards {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
 
-        border-bottom: 1px solid var(--color-border);
-    }
+.content-card {
+    min-width: 0;
+    width: 100%;
+}
 
-    .section-heading-row--compact {
-        display: flex;
-        align-items: flex-end;
-    }
 
-    .section-heading-row--compact h2 {
-        font-size: 28px;
-    }
+.content-column:first-child {
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--color-border);
+}
 
-    .section-heading-row--compact .text-link {
-        margin-top: 0;
-    }
 
-    .content-card--empty {
-        grid-template-columns: 100px 1fr;
-    }
+/* Section heading */
 
-    .content-card__placeholder {
-        min-height: 100%;
-    }
+.section-heading-row--compact {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 
+    margin-bottom: 15px;
+}
+
+.section-heading-row--compact h2 {
+    font-size: 28px;
+}
+
+.section-heading-row--compact .text-link {
+    margin-top: 0;
+}
+
+
+/* Six-card grid:
+ *
+ * 1  2
+ * 3  4
+ * 5  6
+ */
+
+.content-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+
+/* Mobile card */
+
+.content-card__content {
+    padding: 9px;
+}
+
+.content-card__meta {
+    margin-bottom: 5px;
+
+    font-size: 8px;
+    letter-spacing: 0.07em;
+}
+
+.content-card h3 {
+    font-size: 10px;
+    line-height: 1.3;
+}
+
+.content-card p {
+    margin-top: 6px;
+
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+.content-card .text-link {
+    padding-top: 8px;
+
+    font-size: 9px;
+}
+
+
+/* Keep legacy empty-state support */
+
+.content-card--empty {
+    grid-template-columns: 100px 1fr;
+}
+
+.content-card__placeholder {
+    min-height: 100%;
+}
 
     /* --------------------------------------------------------
        Contact CTA
@@ -2371,4 +2482,64 @@ h3 {
         scroll-behavior: auto !important;
     }
 
+}
+
+@media (max-width: 767px) {
+
+    .practice-areas-preview .section-container {
+        width: calc(100% - 32px);
+        max-width: none;
+        margin-inline: auto;
+    }
+
+    .practice-cards {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .practice-card {
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .featured-insights__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .content-column,
+    .content-column:first-child,
+    .content-column:last-child {
+        width: 100%;
+        min-width: 0;
+        padding-inline: 0;
+        border: 0;
+    }
+
+    /*
+     * Featured → Insights separation
+     */
+    .content-column:first-child {
+        padding-bottom: 30px;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    /*
+     * Two-column card grid
+     */
+    .content-cards {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .content-card {
+        min-width: 0;
+        width: 100%;
+    }
 }
