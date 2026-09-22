@@ -3060,3 +3060,62 @@ h3 {
         width: 100%;
     }
 }
+
+/* =========================================================
+   LEGAL PAGE — ACTIVE TABLE OF CONTENTS
+========================================================= */
+
+.legal-page__toc nav a {
+    position: relative;
+    transition:
+        color 180ms ease,
+        padding-left 180ms ease,
+        background-color 180ms ease;
+}
+
+/* Active section */
+
+.legal-page__toc nav a.is-active {
+    color: var(--color-burgundy);
+    padding-left: 8px;
+    font-weight: 500;
+}
+
+/* Animated indicator */
+
+.legal-page__toc nav a.is-active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 2px;
+    height: 0;
+    background-color: var(--color-burgundy);
+    transform: translateY(-50%);
+    animation: legal-toc-indicator 180ms ease forwards;
+}
+
+@keyframes legal-toc-indicator {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 70%;
+    }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .legal-page__toc nav a {
+        transition: none;
+    }
+
+    .legal-page__toc nav a.is-active::before {
+        animation: none;
+        height: 70%;
+    }
+
+}

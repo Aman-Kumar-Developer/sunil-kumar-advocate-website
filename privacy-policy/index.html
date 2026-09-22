@@ -1117,40 +1117,15 @@
 
     </footer>
 
+<script
+    src="/js/navigation.js"
+    defer
+></script>
 
-    <!-- =========================================================
-         MOBILE NAVIGATION
-    ========================================================== -->
-
-    <script>
-        (() => {
-            const toggle = document.querySelector(".menu-toggle");
-            const navigation = document.getElementById("mobile-navigation");
-
-            if (!toggle || !navigation) {
-                return;
-            }
-
-            toggle.addEventListener("click", () => {
-                const isOpen =
-                    toggle.getAttribute("aria-expanded") === "true";
-
-                toggle.setAttribute(
-                    "aria-expanded",
-                    String(!isOpen)
-                );
-
-                toggle.setAttribute(
-                    "aria-label",
-                    isOpen
-                        ? "Open navigation menu"
-                        : "Close navigation menu"
-                );
-
-                navigation.hidden = isOpen;
-            });
-        })();
-    </script>
+<script
+    src="/js/legal-page.js"
+    defer
+></script>
 
 </body>
 
