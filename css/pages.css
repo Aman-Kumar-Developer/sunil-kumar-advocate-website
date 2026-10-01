@@ -5314,3 +5314,1078 @@ h3 {
 
 }
 
+/* ========================================================================
+   COURTS PAGE
+   Courts & Jurisdictions — page-specific styling
+   ------------------------------------------------------------------------
+   This block is intentionally scoped to the Courts page sections.
+   Existing global/header/hero/footer styles are not modified.
+   ======================================================================== */
+
+
+/* =========================================================================
+   01. COURT PRACTICE HIGHLIGHTS
+   ========================================================================= */
+
+.courts-highlights {
+    padding-block: 22px 24px;
+
+    background: var(--color-white);
+
+    border-top: 1px solid var(--color-border-light);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.courts-highlights__inner {
+    width: min(
+        calc(100% - 120px),
+        var(--content-width)
+    );
+
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.courts-highlight {
+    min-width: 0;
+
+    min-height: 94px;
+
+    padding: 12px 28px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.courts-highlight + .courts-highlight {
+    border-left: 1px solid var(--color-border);
+}
+
+
+.courts-highlight__icon {
+    width: 31px;
+    height: 31px;
+
+    margin-bottom: 8px;
+
+    color: var(--color-burgundy);
+}
+
+.courts-highlight__icon svg {
+    width: 100%;
+    height: 100%;
+
+    fill: none;
+
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+.courts-highlight__content h2 {
+    margin-bottom: 3px;
+
+    color: var(--color-charcoal);
+
+    font-family: var(--font-display);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+.courts-highlight__content p {
+    max-width: 190px;
+
+    margin-bottom: 0;
+
+    color: var(--color-charcoal-soft);
+
+    font-size: 10px;
+    line-height: 1.45;
+}
+
+
+/* =========================================================================
+   02. DELHI HIGH COURT
+   ========================================================================= */
+
+.court-primary {
+    padding-block: 30px 34px;
+
+    background: var(--color-ivory);
+}
+
+.court-primary__inner {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    align-items: stretch;
+
+    min-height: 260px;
+}
+
+
+.court-primary__content {
+    min-width: 0;
+
+    padding: 18px 48px 18px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.court-primary__content h2 {
+    margin-bottom: 12px;
+
+    color: var(--color-charcoal);
+
+    font-family: var(--font-display);
+    font-size: clamp(34px, 3.1vw, 46px);
+    font-weight: 500;
+    line-height: 1;
+}
+
+.court-primary__description {
+    max-width: 500px;
+
+    margin-bottom: 20px;
+
+    color: var(--color-charcoal-soft);
+
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+
+.court-primary__visual {
+    min-width: 0;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(180px, 0.85fr);
+}
+
+
+.court-primary__image-wrap {
+    min-width: 0;
+
+    overflow: hidden;
+}
+
+.court-primary__image-wrap img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    aspect-ratio: 1.42 / 1;
+}
+
+
+.court-primary__panel {
+    min-width: 0;
+
+    padding: 28px 28px 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            var(--color-burgundy-light),
+            var(--color-burgundy-dark)
+        );
+
+    color: var(--color-white);
+}
+
+
+.court-primary__panel h3 {
+    margin-bottom: 10px;
+
+    color: var(--color-white);
+
+    font-family: var(--font-display);
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+
+.court-primary__panel-line {
+    width: 27px;
+    height: 1px;
+
+    margin-bottom: 15px;
+
+    background: rgba(255, 255, 255, 0.9);
+}
+
+
+.court-primary__panel p {
+    max-width: 220px;
+
+    margin-bottom: 18px;
+
+    color: rgba(255, 255, 255, 0.92);
+
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+.court-primary__panel-icon {
+    width: 31px;
+    height: 31px;
+
+    margin-bottom: 14px;
+
+    color: var(--color-white);
+}
+
+.court-primary__panel-icon svg {
+    width: 100%;
+    height: 100%;
+
+    fill: none;
+
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+.court-primary__panel-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-family: var(--font-body);
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    line-height: 1.3;
+}
+
+
+/* =========================================================================
+   03. DISTRICT COURTS
+   ========================================================================= */
+
+.district-courts {
+    padding-block: 34px 42px;
+
+    background: var(--color-ivory-light);
+}
+
+
+.district-courts__heading {
+    max-width: 760px;
+
+    margin-bottom: 23px;
+}
+
+.district-courts__heading h2 {
+    margin-bottom: 9px;
+
+    color: var(--color-charcoal);
+
+    font-family: var(--font-display);
+    font-size: clamp(31px, 3vw, 42px);
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+.district-courts__heading > p:last-child {
+    max-width: 760px;
+
+    margin-bottom: 0;
+
+    color: var(--color-charcoal-soft);
+
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+
+/* -------------------------------------------------------------------------
+   District court cards
+   ------------------------------------------------------------------------- */
+
+.district-courts__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+.district-court-card {
+    min-width: 0;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--color-white);
+
+    border: 1px solid var(--color-border);
+
+    transition:
+        transform var(--transition-fast),
+        box-shadow var(--transition-fast),
+        border-color var(--transition-fast);
+}
+
+.district-court-card:hover {
+    transform: translateY(-2px);
+
+    border-color: var(--color-border);
+
+    box-shadow:
+        0 10px 25px rgba(23, 23, 23, 0.07);
+}
+
+
+.district-court-card__image {
+    overflow: hidden;
+
+    aspect-ratio: 1.72 / 1;
+
+    background: var(--color-border-light);
+}
+
+.district-court-card__image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform var(--transition-medium);
+}
+
+.district-court-card:hover .district-court-card__image img {
+    transform: scale(1.025);
+}
+
+
+.district-court-card__content {
+    min-height: 145px;
+
+    padding: 12px 14px 13px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.district-court-card__content h3 {
+    margin-bottom: 7px;
+
+    color: var(--color-charcoal);
+
+    font-family: var(--font-display);
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+
+.district-court-card__content p {
+    max-width: 300px;
+
+    margin-bottom: 10px;
+
+    color: var(--color-charcoal-soft);
+
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+.district-court-card__content a {
+    margin-top: auto;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    color: var(--color-burgundy);
+
+    font-family: var(--font-body);
+    font-size: 10px;
+    font-weight: 600;
+
+    transition:
+        color var(--transition-fast),
+        gap var(--transition-fast);
+}
+
+.district-court-card__content a:hover {
+    color: var(--color-burgundy-dark);
+
+    gap: 9px;
+}
+
+.district-court-card__content a span {
+    font-size: 13px;
+    line-height: 1;
+}
+
+
+/* =========================================================================
+   04. OTHER FORUMS & JURISDICTIONS
+   ========================================================================= */
+
+.other-forums {
+    padding-block: 36px 38px;
+
+    background: var(--color-ivory);
+}
+
+
+.other-forums__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+
+    gap: 34px;
+}
+
+
+.other-forums__content {
+    min-width: 0;
+
+    padding-block: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.other-forums__content h2 {
+    margin-bottom: 10px;
+
+    color: var(--color-charcoal);
+
+    font-family: var(--font-display);
+    font-size: clamp(30px, 2.8vw, 40px);
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+
+.other-forums__content > p:not(.eyebrow) {
+    max-width: 570px;
+
+    margin-bottom: 19px;
+
+    color: var(--color-charcoal-soft);
+
+    font-size: 10px;
+    line-height: 1.55;
+}
+
+
+.other-forums__visual {
+    position: relative;
+
+    min-height: 210px;
+
+    overflow: hidden;
+
+    background: var(--color-charcoal);
+}
+
+
+.other-forums__visual > img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    aspect-ratio: 1.75 / 1;
+}
+
+
+.other-forums__panel {
+    position: absolute;
+
+    inset: 0 0 0 auto;
+
+    width: 35%;
+
+    padding: 25px 22px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(23, 23, 23, 0.56),
+            rgba(23, 23, 23, 0.88)
+        );
+}
+
+
+.other-forums__panel-line {
+    width: 25px;
+    height: 1px;
+
+    margin-bottom: 16px;
+
+    background: rgba(255, 255, 255, 0.85);
+}
+
+
+.other-forums__panel p {
+    margin-bottom: 0;
+
+    color: var(--color-white);
+
+    font-family: var(--font-display);
+    font-size: clamp(18px, 2vw, 25px);
+    font-weight: 500;
+    line-height: 1.15;
+}
+
+
+/* =========================================================================
+   05. COURTS CTA
+   ========================================================================= */
+
+.courts-cta {
+    padding-block: 20px;
+
+    background:
+        linear-gradient(
+            100deg,
+            var(--color-burgundy-dark),
+            var(--color-burgundy)
+        );
+
+    color: var(--color-white);
+}
+
+
+.courts-cta__inner {
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.courts-cta__inner > div {
+    min-width: 0;
+}
+
+
+.courts-cta h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 5px;
+
+    color: var(--color-white);
+
+    font-family: var(--font-display);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.05;
+}
+
+
+.courts-cta h2::after {
+    content: "";
+
+    width: 28px;
+    height: 1px;
+
+    flex: 0 0 auto;
+
+    background: rgba(255, 255, 255, 0.75);
+}
+
+
+.courts-cta p {
+    margin-bottom: 0;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 10px;
+    line-height: 1.45;
+}
+
+
+.courts-cta .button {
+    flex: 0 0 auto;
+
+    min-width: 114px;
+}
+
+
+/* =========================================================================
+   06. TABLET
+   ========================================================================= */
+
+@media (max-width: 1100px) {
+
+    .courts-highlights__inner {
+        width: min(
+            calc(100% - 60px),
+            var(--content-width)
+        );
+    }
+
+
+    .courts-highlight {
+        padding-inline: 18px;
+    }
+
+
+    .court-primary__content {
+        padding-right: 32px;
+    }
+
+
+    .court-primary__panel {
+        padding-inline: 21px;
+    }
+
+
+    .district-courts__grid {
+        gap: 10px;
+    }
+
+
+    .district-court-card__content {
+        min-height: 150px;
+
+        padding-inline: 12px;
+    }
+
+
+    .district-court-card__content h3 {
+        font-size: 18px;
+    }
+
+
+    .other-forums__inner {
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================================================================
+   07. MOBILE
+   ========================================================================= */
+
+@media (max-width: 767px) {
+
+    /* ---------------------------------------------------------------------
+       Practice highlights
+       --------------------------------------------------------------------- */
+
+    .courts-highlights {
+        padding-block: 0;
+    }
+
+
+    .courts-highlights__inner {
+        width: calc(100% - 32px);
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .courts-highlight {
+        min-height: 112px;
+
+        padding: 16px 10px;
+    }
+
+
+    .courts-highlight:nth-child(odd) {
+        border-left: 0;
+    }
+
+
+    .courts-highlight:nth-child(n + 3) {
+        border-top: 1px solid var(--color-border);
+    }
+
+
+    .courts-highlight__icon {
+        width: 27px;
+        height: 27px;
+
+        margin-bottom: 7px;
+    }
+
+
+    .courts-highlight__content h2 {
+        font-size: 15px;
+    }
+
+
+    .courts-highlight__content p {
+        max-width: 150px;
+
+        font-size: 9px;
+    }
+
+
+    /* ---------------------------------------------------------------------
+       High Court
+       --------------------------------------------------------------------- */
+
+    .court-primary {
+        padding-block: 30px 32px;
+    }
+
+
+    .court-primary__inner {
+        width: calc(100% - 32px);
+
+        display: flex;
+        flex-direction: column;
+
+        min-height: auto;
+    }
+
+
+    .court-primary__content {
+        padding: 0 0 22px;
+    }
+
+
+    .court-primary__content h2 {
+        font-size: 34px;
+    }
+
+
+    .court-primary__description {
+        margin-bottom: 17px;
+
+        font-size: 11px;
+    }
+
+
+    .court-primary__visual {
+        display: grid;
+        grid-template-columns: 1.45fr 0.85fr;
+    }
+
+
+    .court-primary__image-wrap img {
+        aspect-ratio: 1.25 / 1;
+    }
+
+
+    .court-primary__panel {
+        padding: 22px 17px;
+    }
+
+
+    .court-primary__panel h3 {
+        font-size: 20px;
+    }
+
+
+    .court-primary__panel p {
+        font-size: 9px;
+    }
+
+
+    .court-primary__panel-label {
+        font-size: 6.5px;
+    }
+
+
+    /* ---------------------------------------------------------------------
+       District Courts
+       --------------------------------------------------------------------- */
+
+    .district-courts {
+        padding-block: 30px 34px;
+    }
+
+
+    .district-courts__heading {
+        margin-bottom: 19px;
+    }
+
+
+    .district-courts__heading h2 {
+        font-size: 31px;
+    }
+
+
+    .district-courts__heading > p:last-child {
+        font-size: 10px;
+    }
+
+
+    .district-courts__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+
+    .district-court-card__image {
+        aspect-ratio: 1.55 / 1;
+    }
+
+
+    .district-court-card__content {
+        min-height: 145px;
+
+        padding: 11px 10px 12px;
+    }
+
+
+    .district-court-card__content h3 {
+        font-size: 17px;
+    }
+
+
+    .district-court-card__content p {
+        font-size: 9px;
+        line-height: 1.45;
+    }
+
+
+    .district-court-card__content a {
+        font-size: 9px;
+    }
+
+
+    /* ---------------------------------------------------------------------
+       Other forums
+       --------------------------------------------------------------------- */
+
+    .other-forums {
+        padding-block: 30px 32px;
+    }
+
+
+    .other-forums__inner {
+        width: calc(100% - 32px);
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 22px;
+    }
+
+
+    .other-forums__content {
+        padding-block: 0;
+    }
+
+
+    .other-forums__content h2 {
+        font-size: 30px;
+    }
+
+
+    .other-forums__content > p:not(.eyebrow) {
+        font-size: 10px;
+    }
+
+
+    .other-forums__visual {
+        min-height: 200px;
+    }
+
+
+    .other-forums__panel {
+        width: 38%;
+
+        padding-inline: 16px;
+    }
+
+
+    .other-forums__panel p {
+        font-size: 20px;
+    }
+
+
+    /* ---------------------------------------------------------------------
+       CTA
+       --------------------------------------------------------------------- */
+
+    .courts-cta {
+        padding-block: 22px;
+    }
+
+
+    .courts-cta__inner {
+        width: calc(100% - 32px);
+
+        min-height: auto;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 17px;
+    }
+
+
+    .courts-cta h2 {
+        font-size: 24px;
+    }
+
+
+    .courts-cta p {
+        font-size: 10px;
+    }
+
+
+    .courts-cta .button {
+        width: auto;
+    }
+
+}
+
+
+/* =========================================================================
+   08. SMALL MOBILE
+   ========================================================================= */
+
+@media (max-width: 480px) {
+
+    .courts-highlight {
+        min-height: 108px;
+
+        padding-inline: 8px;
+    }
+
+
+    .courts-highlight__content h2 {
+        font-size: 14px;
+    }
+
+
+    .courts-highlight__content p {
+        font-size: 8.5px;
+    }
+
+
+    .court-primary__visual {
+        grid-template-columns: 1fr;
+    }
+
+
+    .court-primary__image-wrap img {
+        aspect-ratio: 1.5 / 1;
+    }
+
+
+    .court-primary__panel {
+        min-height: 205px;
+
+        padding: 22px 20px;
+    }
+
+
+    .court-primary__panel h3 {
+        font-size: 21px;
+    }
+
+
+    .district-courts__grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+    }
+
+
+    .district-court-card__content {
+        min-height: 158px;
+
+        padding: 10px 9px;
+    }
+
+
+    .district-court-card__content h3 {
+        font-size: 16px;
+    }
+
+
+    .district-court-card__content p {
+        font-size: 8.5px;
+    }
+
+
+    .district-court-card__content a {
+        font-size: 8.5px;
+    }
+
+
+    .other-forums__visual {
+        min-height: 180px;
+    }
+
+
+    .other-forums__panel {
+        width: 43%;
+    }
+
+
+    .other-forums__panel p {
+        font-size: 18px;
+    }
+
+
+    .courts-cta h2 {
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================================================================
+   09. REDUCED MOTION
+   ========================================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .district-court-card,
+    .district-court-card__image img,
+    .district-court-card__content a {
+        transition: none;
+    }
+
+}
