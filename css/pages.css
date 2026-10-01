@@ -6389,3 +6389,49 @@ h3 {
     }
 
 }
+
+/* =========================================================================
+   COURTS PAGE — ASYMMETRIC EDITORIAL CONTAINER
+   ========================================================================= */
+
+.courts-page .hero__inner {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    padding-left: max(
+        60px,
+        calc((100vw - var(--content-width)) / 2)
+    );
+}
+
+
+.courts-page .courts-highlights__inner {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+
+.courts-page .court-primary__inner {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    padding-left: max(
+        60px,
+        calc((100vw - var(--content-width)) / 2)
+    );
+}
+
+
+.courts-page .other-forums__inner {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    padding-left: max(
+        60px,
+        calc((100vw - var(--content-width)) / 2)
+    );
+}
