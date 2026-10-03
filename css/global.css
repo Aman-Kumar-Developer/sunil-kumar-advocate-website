@@ -1030,7 +1030,7 @@
     .main-navigation,
     .site-header__action-divider,
     .search-button,
-    .header-cta {
+    .site-header .header-cta {
         display: none;
     }
 
