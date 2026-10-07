@@ -1,0 +1,22 @@
+domain
+
+
+advsunilkumar.com
+
+sunilkumaradvocate.in
+
+Element	Homepage system	About page now
+Hero heading	42–60px	42–60px
+Section heading	30–42px	30–42px
+Hero body	13px	13px
+Normal supporting text	12px	12px
+Small supporting text	10–11px	10–11px
+Navigation/button text	12px	12px
+Card heading	~`12–17px`	13–17px depending on section
+Eyebrow	9px	9px
+Mobile body	10–11px	10–11px
+Mobile section heading	~`28–32px`	32px
+Mobile CTA heading	28px	28px
+
+
+So the About page should now feel like the same design system, rather than a separate oversized page.

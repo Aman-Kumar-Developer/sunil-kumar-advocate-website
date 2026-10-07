@@ -1,0 +1,14 @@
+/
+├── About
+├── Practice Areas
+│   ├── Banking & Recovery Litigation
+│   ├── High Court & Writ Practice
+│   ├── Civil, Commercial & Contractual Matters
+│   ├── Property Matters
+│   ├── Criminal & NI Act Matters
+│   ├── Arbitration
+│   └── Legal Drafting, Advisory & Due Diligence
+├── Courts & Jurisdictions
+├── Featured
+├── Insights
+└── Contact

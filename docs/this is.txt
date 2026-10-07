@@ -1,0 +1,9 @@
+This is:
+
+A digital presence for Upadhyay & Associates, with individual professional profiles for its advocates.
+
+Sunil Kumar's profile is one component of the website.
+
+And that distinction should influence everything:
+
+domain → branding → navigation → URL structure → SEO → content → database structure → frontend components.

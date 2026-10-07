@@ -1,0 +1,1143 @@
+Created isolated worktree for branch `agents/audit-and-discovery-sunil-advocate`
+
+I’ll inspect the repository as it exists, including recursively inventorying source/docs/assets and checking the worktree so the audit remains read-only and preserves any pre-existing changes.
+
+Ran terminal command: git status --short; Get-ChildItem -Force | Select-Object Mode,Name,Length; Get-ChildItem -Force -Recurse | ForEach-Object { $p=$_.FullName.Substring((Get-Location).Path.Length+1); if ($_.PSIsContainer) { "$p\" } else { "$p`t$($_.Length) bytes" } }
+
+Ran terminal command: if (Test-Path .\docs) { Get-ChildItem .\docs -Force -Recurse | ForEach-Object { $p=$_.FullName.Substring((Get-Location).Path.Length+1); if ($_.PSIsContainer) { "$p\" } else { "$p`t$($_.Length) bytes" } } } else { 'NO docs directory at repository root' }
+
+Ran terminal command: git status --short; Get-ChildItem -Force -Recurse -File | ForEach-Object { $_.FullName.Substring((Get-Location).Path.Length+1) }
+
+Ran terminal command: Get-Command pdftotext, python, node, magick -ErrorAction SilentlyContinue | Select-Object Name,Source; python -c "import importlib.util; print({m: bool(importlib.util.find_spec(m)) for m in ['pypdf','PyPDF2','PIL','docx','openpyxl']})"
+
+Find files matching `**/*.html`
+
+Find files matching `**/*.{css,js,xml,txt,md,json,svg,png,jpg,jpeg,webp,woff,woff2,ttf,otf,pdf,doc...`
+
+Search for `href=|src=|canonical|og:|twitter:|application/ld\+json|<title>|name="descript...`
+
+The filesystem differs from the supplied outline: it includes six practice-area detail pages plus policies, a standalone standard template, extra JavaScript, design outputs/screenshots, and additional asset subfolders. I’m now reading the actual page markup, shared architecture, and routing/SEO files, then I’ll inspect the PDF and template references.
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\index.html"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\practice-areas\\index.html"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\courts\\index.html"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\featured\\index.html"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\insights\\index.html"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\standerd.html"
+}
+
+Ran terminal command: Get-ChildItem -Recurse -File -Include *.html,*.css,*.js,*.xml,*.txt,*.md | ForEach-Object { $c=(Get-Content $_.FullName).Count; "$($_.FullName.Substring((Get-Location).Path.Length+1))`t$c lines`t$((Get-Item $_.FullName).Length) bytes" }
+
+Search for `<title>|<meta|<link rel="canonical|<h1|<h2|<h3|<article|<a |<img|application/...`
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\README.md"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\sitemap.xml"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\robots.txt"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\project structure.txt"
+}
+
+Search for `class="[^"]*(card|grid|list|item)[^"]*"|<article|<section|<main|<h1|<h2|<h3`
+
+Read , lines 1 to 220
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\css\\global.css",
+  "view_range": [
+    1,
+    220
+  ]
+}
+
+Read , lines 1 to 240
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\css\\pages.css",
+  "view_range": [
+    1,
+    240
+  ]
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\js\\main.js"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\js\\navigation.js"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\js\\insights.js"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\js\\legal-page.js"
+}
+
+Read , lines 440 to 740
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\practice-areas\\index.html",
+  "view_range": [
+    440,
+    740
+  ]
+}
+
+Read , lines 425 to 730
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\courts\\index.html",
+  "view_range": [
+    425,
+    730
+  ]
+}
+
+Read , lines 355 to 700
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\featured\\index.html",
+  "view_range": [
+    355,
+    700
+  ]
+}
+
+Read , lines 190 to 390
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\insights\\index.html",
+  "view_range": [
+    190,
+    390
+  ]
+}
+
+Read , lines 1 to 220
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\standerd.html",
+  "view_range": [
+    1,
+    220
+  ]
+}
+
+Read , lines 1 to 180
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\README.md",
+  "view_range": [
+    1,
+    180
+  ]
+}
+
+Search for `^\s*--[a-zA-Z0-9_-]+\s*:|@media|\.practice-area|\.court-detail|\.featured-det...`
+
+Ran terminal command: @'
+from html.parser import HTMLParser
+from pathlib import Path
+class Node:
+ def __init__(self,t,a): self.tag=t; self.attrs=dict(a); self.children=[]
+ def text(self): return ' '.join(' '.join(c.text() if isinstance(c,Node) else c for c in self.children).split())
+ def walk(self):
+  yield self
+  for c in self.children:
+   if isinstance(c,Node): yield from c.walk()
+class P(HTMLParser):
+ def __init__(self): super().__init__(); self.root=Node('root',[]); self.stack=[self.root]
+ def handle_starttag(self,t,a):
+  n=Node(t,a); self.stack[-1].children.append(n)
+  if t not in {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}: self.stack.append(n)
+ def handle_endtag(self,t):
+  for i in range(len(self.stack)-1,0,-1):
+   if self.stack[i].tag==t: self.stack=self.stack[:i]; break
+ def handle_data(self,d):
+  if d.strip(): self.stack[-1].children.append(d.strip())
+for f, cls in [('practice-areas/index.html','practice-card'),('courts/index.html','district-court-card'),('featured/index.html','featured-card'),('insights/index.html','insight-card')]:
+ p=P(); p.feed(Path(f).read_text(encoding='utf-8'))
+ print('\n###',f)
+ for n in p.root.walk():
+  if cls in n.attrs.get('class','').split():
+   imgs=[(x.attrs.get('src'),x.attrs.get('alt')) for x in n.walk() if x.tag=='img']
+   links=[(x.attrs.get('href'),x.text()) for x in n.walk() if x.tag=='a']
+   times=[x.attrs.get('datetime')+':'+x.text() for x in n.walk() if x.tag=='time']
+   print('TEXT:',n.text())
+   print('IMG:',imgs)
+   print('LINKS:',links)
+   print('TIMES:',times)
+'@ | python -
+Tool execution failed with exit code 1
+
+Ran terminal command: @'
+from pathlib import Path
+import re,struct,hashlib
+for f in Path('assets').rglob('*'):
+ if f.is_file() and f.suffix.lower() in {'.png','.jpg','.jpeg','.webp'}:
+  b=f.read_bytes(); wh='unknown'
+  if b[:8]==b'\x89PNG\r\n\x1a\n' and len(b)>=24: wh=f'{struct.unpack(">II",b[16:24])}'
+  elif b[:2]==b'\xff\xd8':
+   i=2
+   while i<len(b)-9:
+    if b[i]!=255: i+=1; continue
+    marker=b[i+1]; length=int.from_bytes(b[i+2:i+4],'big')
+    if marker in (192,193,194,195,197,198,199,201,202,203,205,206,207): wh=f'{int.from_bytes(b[i+7:i+9],"big")}x{int.from_bytes(b[i+5:i+7],"big")}'; break
+    i+=2+length
+  print(f'{f.as_posix()}\t{wh}\t{hashlib.sha256(b).hexdigest()[:12]}')
+'@ | python -
+
+Ran terminal command: @'
+from pathlib import Path
+import re,zlib
+p=Path('docs/Sunil_Kumar_Professional_Legal_Profile.pdf'); b=p.read_bytes(); print('PDF bytes',len(b),'version',b[:8])
+streams=re.findall(rb'stream\r?\n(.*?)\r?\nendstream',b,re.S)
+print('streams',len(streams))
+for i,s in enumerate(streams):
+ try: d=zlib.decompress(s)
+ except Exception: d=s
+ if any(x in d for x in (b'Tj',b'TJ',b'BT')):
+  print('\nSTREAM',i,repr(d[:2500]))
+'@ | python -
+
+Ran terminal command: $env:PYTHONIOENCODING='utf-8'; @'
+from html.parser import HTMLParser
+from pathlib import Path
+class Node:
+ def __init__(self,t,a): self.tag=t; self.attrs=dict(a); self.children=[]
+ def text(self): return ' '.join(' '.join(c.text() if isinstance(c,Node) else c for c in self.children).split())
+ def walk(self):
+  yield self
+  for c in self.children:
+   if isinstance(c,Node): yield from c.walk()
+class P(HTMLParser):
+ def __init__(self): super().__init__(); self.root=Node('root',[]); self.stack=[self.root]
+ def handle_starttag(self,t,a):
+  n=Node(t,a); self.stack[-1].children.append(n)
+  if t not in {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}: self.stack.append(n)
+ def handle_endtag(self,t):
+  for i in range(len(self.stack)-1,0,-1):
+   if self.stack[i].tag==t: self.stack=self.stack[:i]; break
+ def handle_data(self,d):
+  if d.strip(): self.stack[-1].children.append(d.strip())
+for f, cls in [('practice-areas/index.html','practice-card'),('courts/index.html','district-court-card'),('featured/index.html','featured-card'),('insights/index.html','insight-card')]:
+ p=P(); p.feed(Path(f).read_text(encoding='utf-8'))
+ print('\n###',f)
+ for n in p.root.walk():
+  if cls in n.attrs.get('class','').split():
+   imgs=[(x.attrs.get('src'),x.attrs.get('alt')) for x in n.walk() if x.tag=='img']
+   links=[(x.attrs.get('href'),x.text()) for x in n.walk() if x.tag=='a']
+   times=[x.attrs.get('datetime')+':'+x.text() for x in n.walk() if x.tag=='time']
+   print('TEXT:',n.text())
+   print('IMG:',imgs,'LINKS:',links,'TIMES:',times)
+'@ | python -
+
+Ran terminal command: @'
+from pathlib import Path
+import re
+b=Path('docs/Sunil_Kumar_Professional_Legal_Profile.pdf').read_bytes()
+for m in re.finditer(rb'stream\r?\n',b):
+ print(b[max(0,m.start()-350):m.start()].decode('latin1','replace')[-350:].replace('\n',' '))
+'@ | python -
+Tool execution failed with exit code 1
+
+Ran terminal command: @'
+from pathlib import Path
+from html.parser import HTMLParser
+import re
+class P(HTMLParser):
+ def __init__(self): super().__init__(); self.img=[]
+ def handle_starttag(self,t,a):
+  d=dict(a)
+  if t in ('img','script','link'):
+   x=d.get('src') if t=='script' else d.get('href') if t=='link' else d.get('src')
+   if x: self.img.append((t,x))
+used={}
+for f in Path('.').rglob('*.html'):
+ p=P(); p.feed(f.read_text(encoding='utf-8'))
+ for t,x in p.img:
+  if x.startswith('/'): used.setdefault(x,[]).append(str(f))
+for x,fs in sorted(used.items()):
+ if x.startswith('/assets/'):
+  print(x, ' <- ', ', '.join(fs))
+missing=[]
+for x in used:
+ if x.startswith('/assets/') and not Path('.'+x).exists(): missing.append(x)
+print('MISSING_REFERENCES:',missing)
+'@ | python -
+
+Opened `Browser`
+
+Search for `^(###|TEXT:|IMG:|MISSING|LINKS:|TIMES:)`
+
+Read , lines 530 to 665
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\courts\\index.html",
+  "view_range": [
+    530,
+    665
+  ]
+}
+
+Read , lines 385 to 600
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\featured\\index.html",
+  "view_range": [
+    385,
+    600
+  ]
+}
+
+Read , lines 260 to 390
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\insights\\index.html",
+  "view_range": [
+    260,
+    390
+  ]
+}
+
+Read , lines 1 to 160
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\about\\index.html",
+  "view_range": [
+    1,
+    160
+  ]
+}
+
+Read , lines 1 to 75
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\css\\pages.css",
+  "view_range": [
+    1,
+    75
+  ]
+}
+
+Read `Browser`
+
+The parent-card scan finds six linked district-court targets and seven practice-area card targets; all linked court targets are absent, while the seven practice URLs have folders but empty `index.html` files. Featured and Insights cards need careful route/source treatment, so I’m checking every card record, the client profile’s actual text, and the visual reference set before assigning statuses.
+
+Ran terminal command: $env:PYTHONIOENCODING='utf-8'; @'
+from html.parser import HTMLParser
+from pathlib import Path
+class N:
+ def __init__(self,t,a): self.t=t; self.a=dict(a); self.c=[]
+ def walk(self):
+  yield self
+  for x in self.c:
+   if isinstance(x,N): yield from x.walk()
+ def txt(self): return ' '.join(' '.join(x.txt() if isinstance(x,N) else x for x in self.c).split())
+class P(HTMLParser):
+ def __init__(self): super().__init__(); self.r=N('root',[]); self.s=[self.r]
+ def handle_starttag(self,t,a):
+  n=N(t,a); self.s[-1].c.append(n)
+  if t not in {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}: self.s.append(n)
+ def handle_endtag(self,t):
+  for i in range(len(self.s)-1,0,-1):
+   if self.s[i].t==t: self.s=self.s[:i]; break
+ def handle_data(self,d):
+  if d.strip(): self.s[-1].c.append(d.strip())
+for f,cls in [('practice-areas/index.html','practice-card'),('courts/index.html','district-court-card'),('featured/index.html','featured-card'),('insights/index.html','insight-card')]:
+ p=P();p.feed(Path(f).read_text(encoding='utf-8')); print('\n'+f)
+ for n in p.r.walk():
+  if cls in n.a.get('class','').split():
+   h=[x.a.get('href') for x in n.walk() if x.t=='a' and x.a.get('href')]
+   im=[x.a.get('src') for x in n.walk() if x.t=='img']
+   ti=[x.txt() for x in n.walk() if x.t in ('h2','h3')]
+   da=[x.txt() for x in n.walk() if x.t=='time']
+   cat=n.a.get('data-category','')
+   print('TITLE=',ti,'CATEGORY=',cat,'DATE=',da,'IMG=',im,'HREF=',h,'TEXT=',n.txt())
+'@ | python -
+
+Ran terminal command: $env:PYTHONIOENCODING='utf-8'; @'
+from pathlib import Path
+import re,base64,zlib
+b=Path('docs/Sunil_Kumar_Professional_Legal_Profile.pdf').read_bytes()
+for m in re.finditer(rb'(<<.*?>>)\s*stream\r?\n',b,re.S):
+ d=m.group(1); end=b.find(b'endstream',m.end()); raw=b[m.end():end].rstrip(b'\r\n')
+ try:
+  if b'ASCII85Decode' in d: raw=base64.a85decode(raw,adobe=True)
+  if b'FlateDecode' in d: raw=zlib.decompress(raw)
+ except Exception as e: print('decodefail',e); continue
+ print('\nDICT',d.decode('latin1','replace'))
+ if b'BT' in raw or b'Tj' in raw or b'TJ' in raw:
+  print('CONTENT',repr(raw[:12000]))
+'@ | python -
+
+Opened browser page at file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/output/practice-areas/banking-recovery/desktop/001.png
+Tool execution failed: ERR_FAILED (-2) loading 'file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/output/practice-areas/banking-recovery/desktop/001.png'
+
+Opened browser page at file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/docs/design/featured_page.png
+Tool execution failed: ERR_FAILED (-2) loading 'file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/docs/design/featured_page.png'
+
+Opened browser page at file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/docs/design/courts.png
+Tool execution failed: ERR_FAILED (-2) loading 'file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/docs/design/courts.png'
+
+Opened browser page at file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/docs/design/insight_page.png
+Tool execution failed: ERR_FAILED (-2) loading 'file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/docs/design/insight_page.png'
+
+Opened `Browser`
+
+Search for `^DICT|^CONTENT|/F[0-9]+|Tj|TJ|\(.*\) Tj`
+
+Search for `^practice-areas/index|^courts/index|^featured/index|^insights/index|^TITLE=|^...`
+
+Read , lines 1 to 150
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\output\\README.md",
+  "view_range": [
+    1,
+    150
+  ]
+}
+
+"Read" failed
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\sitemap.xml",
+  "view_range": [
+    1,
+    20
+  ]
+}
+Tool execution failed: view_range out of bounds
+
+"Read" failed
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\robots.txt",
+  "view_range": [
+    1,
+    20
+  ]
+}
+Tool execution failed: view_range out of bounds
+
+Captured browser screenshot
+Completed with input: {
+  "pageId": "af27c7d4-3f52-410d-9500-169bb772831b"
+}
+
+Ran terminal command: $env:PYTHONIOENCODING='utf-8'; @'
+from pathlib import Path
+import re,base64,zlib
+b=Path('docs/Sunil_Kumar_Professional_Legal_Profile.pdf').read_bytes()
+for m in re.finditer(rb'(<<.*?>>)\s*stream\r?\n',b,re.S):
+ d=m.group(1); end=b.find(b'endstream',m.end()); raw=b[m.end():end].rstrip(b'\r\n')
+ try:
+  if b'ASCII85Decode' in d: raw=base64.a85decode(raw,adobe=True)
+  if b'FlateDecode' in d: raw=zlib.decompress(raw)
+ except Exception: continue
+ if b'BT' not in raw: continue
+ strings=[]
+ for q in re.finditer(rb'\(((?:\\.|[^\\)])*)\)\s*Tj',raw):
+  s=q.group(1).replace(b'\\(',b'(').replace(b'\\)',b')').replace(b'\\n',b' ').replace(b'\\r',b' ').replace(b'\\\\',b'\\')
+  strings.append(s.decode('latin1','replace'))
+ print('\n'.join(strings))
+'@ | python -
+
+Ran terminal command: $env:PYTHONIOENCODING='utf-8'; @'
+from html.parser import HTMLParser
+from pathlib import Path
+class N:
+ def __init__(self,t,a): self.t=t; self.a=dict(a); self.c=[]
+ def walk(self):
+  yield self
+  for x in self.c:
+   if isinstance(x,N): yield from x.walk()
+ def txt(self): return ' '.join(' '.join(x.txt() if isinstance(x,N) else x for x in self.c).split())
+class P(HTMLParser):
+ def __init__(self): super().__init__(); self.r=N('root',[]); self.s=[self.r]
+ def handle_starttag(self,t,a):
+  n=N(t,a); self.s[-1].c.append(n)
+  if t not in {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}: self.s.append(n)
+ def handle_endtag(self,t):
+  for i in range(len(self.s)-1,0,-1):
+   if self.s[i].t==t: self.s=self.s[:i]; break
+ def handle_data(self,d):
+  if d.strip(): self.s[-1].c.append(d.strip())
+for f,cl in [('practice-areas/index.html','practice-card'),('courts/index.html','district-court-card'),('featured/index.html','featured-card'),('insights/index.html','insight-card')]:
+ p=P();p.feed(Path(f).read_text(encoding='utf-8')); print('\n'+f)
+ for n in p.r.walk():
+  if cl in n.a.get('class','').split():
+   title=next((x.txt() for x in n.walk() if x.t in ('h2','h3')),'')
+   href=next((x.a.get('href') for x in n.walk() if x.t=='a' and x.a.get('href')),'NONE')
+   img=next((x.a.get('src') for x in n.walk() if x.t=='img'),'NONE')
+   date=next((x.a.get('datetime','')+' '+x.txt() for x in n.walk() if x.t=='time'),'')
+   cat=n.a.get('data-category','') or next((x.txt() for x in n.walk() if 'category' in x.a.get('class','')),'')
+   paras=[x.txt() for x in n.walk() if x.t=='p']
+   print(f'{title} | {cat} | {date} | {href} | {img} | {" / ".join(paras)[:220]}')
+'@ | python -
+
+Read , lines 1 to 120
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\output\\manifest.json",
+  "view_range": [
+    1,
+    120
+  ]
+}
+
+"Read" failed
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\sitemap.xml",
+  "view_range": [
+    1,
+    5
+  ]
+}
+Tool execution failed: view_range out of bounds
+
+"Read" failed
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\robots.txt",
+  "view_range": [
+    1,
+    5
+  ]
+}
+Tool execution failed: view_range out of bounds
+
+Read , lines 30 to 125
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\output\\README.md",
+  "view_range": [
+    30,
+    125
+  ]
+}
+
+Search for `page-specific-data-here|lorem|TODO|placeholder|href="/term-of-use/|/assets/im...`
+
+Search for `practice-area-detail|court-detail|featured-detail|insight-detail|article-deta...`
+
+Ran terminal command: $env:PYTHONIOENCODING='utf-8'; @'
+from pathlib import Path
+from html.parser import HTMLParser
+class P(HTMLParser):
+ def __init__(self): super().__init__(); self.out=[]
+ def handle_starttag(self,t,a):
+  d=dict(a)
+  if t in ('title','script','link','meta'):
+   self.out.append((t,d))
+ def handle_data(self,d): pass
+for f in sorted(Path('.').rglob('*.html')):
+ s=f.read_text(encoding='utf-8'); p=P(); p.feed(s)
+ title=' '.join(__import__('re').findall(r'<title[^>]*>(.*?)</title>',s,__import__('re').S|__import__('re').I)[0].split()) if __import__('re').search(r'<title[^>]*>(.*?)</title>',s,__import__('re').S|__import__('re').I) else 'NONE'
+ canon=__import__('re').search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"']*)',s,__import__('re').I)
+ desc=__import__('re').search(r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"']*)',s,__import__('re').I)
+ js=__import__('re').findall(r'<script[^>]+src=["\']([^"']*)',s,__import__('re').I)
+ print(f'{f.as_posix()} | {len(s)} bytes | TITLE:{title[:100]} | CANON:{canon.group(1) if canon else "NONE"} | DESC:{(desc.group(1)[:60] if desc else "NONE")} | JSONLD:{"yes" if "application/ld+json" in s else "no"} | JS:{",".join(js)}')
+'@ | python -
+
+Ran terminal command: $env:PYTHONIOENCODING='utf-8'; @'
+from pathlib import Path
+from html.parser import HTMLParser
+import re
+class P(HTMLParser):
+ def __init__(self): super().__init__(); self.refs=[]
+ def handle_starttag(self,t,a):
+  d=dict(a)
+  for k in ('href','src'):
+   if d.get(k): self.refs.append((t,k,d[k]))
+
+def route_exists(path):
+ p=path.split('#')[0].split('?')[0]
+ if not p or p.startswith(('mailto:','tel:','javascript:','data:','http:','https:')): return True
+ if p.startswith('/'): p=p[1:]
+ if p=='': return Path('index.html').is_file()
+ return Path(p).is_file() or Path(p,'index.html').is_file()
+for f in sorted(Path('.').rglob('*.html')):
+ p=P(); p.feed(f.read_text(encoding='utf-8'))
+ for t,k,x in p.refs:
+  if x.startswith('/') and not route_exists(x): print(f'{f.as_posix()} | {k}={x}')
+'@ | python -
+
+Opened `Browser`
+
+A full-site link audit uncovered additional homepage-only detail routes not present in the four section listings: six named Featured matters and six Insights links. I’m including those in the route inventory and checking their actual card metadata; I’ll keep homepage cards distinct from the Insights index’s eight inline, expandable entries, which have no child URLs.
+
+Search for `href="/featured/|href="/insights/`
+
+Read , lines 560 to 810
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\featured\\index.html",
+  "view_range": [
+    560,
+    810
+  ]
+}
+
+Read , lines 190 to 300
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\insights\\index.html",
+  "view_range": [
+    190,
+    300
+  ]
+}
+
+Read , lines 215 to 420
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\css\\global.css",
+  "view_range": [
+    215,
+    420
+  ]
+}
+
+Read , lines 910 to 1000
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\css\\global.css",
+  "view_range": [
+    910,
+    1000
+  ]
+}
+
+Read , lines 1 to 110
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\css\\pages.css",
+  "view_range": [
+    1,
+    110
+  ]
+}
+
+Search for `practice-area-detail|court-detail|featured-detail|insight-detail|article-deta...`
+
+Read , lines 1190 to 1425
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\index.html",
+  "view_range": [
+    1190,
+    1425
+  ]
+}
+
+Read , lines 1445 to 1690
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\index.html",
+  "view_range": [
+    1445,
+    1690
+  ]
+}
+
+Search for `Practice Area|Practice Areas|COURT|Court|Featured|Insight|desktop|mobile|tabl...`
+
+Read , lines 5930 to 6025
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\css\\pages.css",
+  "view_range": [
+    5930,
+    6025
+  ]
+}
+
+Read , lines 1000 to 1175
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\css\\global.css",
+  "view_range": [
+    1000,
+    1175
+  ]
+}
+
+Captured browser screenshot
+Completed with input: {
+  "pageId": "251c8477-d161-49b0-92dc-eb30a979c757"
+}
+
+Opened browser page at file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/docs/design/featured_page.png
+Tool execution failed: ERR_FAILED (-2) loading 'file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/docs/design/featured_page.png'
+
+Opened browser page at file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/%20audit-and-discovery-sunil-advocate/docs/design/insight_page.png
+Tool execution failed: ERR_FAILED (-2) loading 'file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/%20audit-and-discovery-sunil-advocate/docs/design/insight_page.png'
+
+Opened browser page at file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/docs/design/mobile+Desktop_view.png
+Tool execution failed: ERR_FAILED (-2) loading 'file:///D:/GIG/Sunil_kumar/adv-sunil-kumar-portfolio.worktrees/audit-and-discovery-sunil-advocate/docs/design/mobile+Desktop_view.png'
+
+Opened `Browser`
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\docs\\design\\featured_page.png"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\docs\\design\\insight_page.png"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\docs\\design\\mobile+Desktop_view.png"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\GIG\\Sunil_kumar\\adv-sunil-kumar-portfolio.worktrees\\audit-and-discovery-sunil-advocate\\docs\\design\\mobile_view.png"
+}
+
+Ran terminal command: git status --short; Get-Item robots.txt,sitemap.xml,css\reset.css,css\variables.css,css\components.css,practice-areas\*\index.html | Select-Object FullName,Length; Get-ChildItem docs\design -File | Select-Object Name,Length; (Get-ChildItem output -Recurse -File -Filter 001.png | Measure-Object).Count
+
+Search for `tel:|mailto:|8077739867|9634352734|Sunilupadhayay5@gmail.com|F-67|13-A/E|@type`
+
+Search for `@media`
+
+Search for `@type`
+
+Search for `href="/featured/|href="/courts/|href="/practice-areas/|href="/insights/`
+
+# 1. EXECUTIVE SUMMARY
+
+The project is a static HTML/CSS/vanilla-JavaScript website; it has no framework router or build system. The actual repository contains **four parent sections** and **31 future detail-page targets** discovered from the section pages and homepage cards:
+
+- 12 Featured targets
+- 6 Courts targets
+- 7 Practice Area targets
+- 6 homepage-linked Insights targets
+
+Seven Practice Area detail folders contain zero-byte `index.html` files. The other 24 target routes have no corresponding folders or pages. **No completed detail pages exist.**
+
+There is also an Insights index with eight article cards that expand inline and have **no detail-page links**. Those are not counted as future detail routes; the homepage separately links to six other Insight topics.
+
+Main issues and risks:
+
+- No court, Featured, or Insights detail routes exist. The seven Practice Area files are empty.
+- The supplied client profile supports broad professional background, practice scope, court appearances, qualifications, and chamber contact details, but not the named cases, citations, publications, or specific family-law topics shown on the homepage.
+- Three Featured items do not safely identify a specific matter or engagement from the card information alone.
+- The one visible child-page design reference is for Courts. The available design files do not provide separate Featured, Insights, and Practice Area detail-page designs.
+- The sitemap and `robots.txt` are both zero bytes.
+- There are broken page links, a missing manifest reference, a case-mismatched image reference, and placeholder SEO metadata.
+- The screenshot archive under `output/` contains unresolved merge markers and statements that conflict with the current site.
+
+I made **no production changes** and performed no external research.
+
+# 2. ACTUAL PROJECT DIRECTORY
+
+The repository is larger than the supplied outline. This is the discovered structure, grouped where there are many generated screenshot files:
+
+- `Repository root` **[EXISTING]**
+  - `index.html` **[RELEVANT]**
+  - `standerd.html` **[PLACEHOLDER]** — standalone misspelled standard-page template
+  - `about/` — `index.html`
+  - `practice-areas/` — parent `index.html` and seven linked detail folders; all seven detail `index.html` files are **[EMPTY]**
+  - `courts/` — parent only; no court-detail folders
+  - `featured/` — parent only; no detail folders
+  - `insights/` — parent only; no detail folders
+  - `contact/`, `privacy-policy/`, `terms-of-use/` — each has an HTML page
+  - `assets/`
+    - `assets/images/` — practice, courts, Featured, profile, and legal-concept images; includes nested `courts/`, `featured/`, and a logo package folder
+    - `assets/icons/` — favicon and multiple logo-size exports
+    - `assets/fonts/` **[EMPTY]** apart from `.gitkeep`
+  - `css/` — five stylesheets; three are zero bytes
+  - `js/` — four scripts, not just the two in the supplied outline
+  - `docs/` **[RELEVANT]**
+    - `Sunil_Kumar_Professional_Legal_Profile.pdf`
+    - `docs/design/` — 11 PNG reference boards/screenshots
+  - `output/` **[GENERATED / NOT SITE SOURCE]** — 51 screenshots at desktop, tablet, and mobile sizes, plus a manifest and README; the README and manifest contain merge-conflict markers
+  - `.idea/` **[UNRELATED]** — IDE configuration
+  - `README.md`, `project structure.txt`, `.gitignore`
+  - `sitemap.xml` **[EMPTY]**
+  - `robots.txt` **[EMPTY]**
+
+The current worktree was clean at inspection and remains unchanged.
+
+# 3. EXISTING HTML PAGE INVENTORY
+
+| Path | Page Type | Status | Purpose | Notes |
+|---|---|---|---|---|
+| `index.html` | Homepage | Substantive | Main profile and homepage feature cards | Contains six case links and six separate Insight links to missing pages. |
+| `about/index.html` | Standard page | Substantive | Advocate profile | A brand aria-label and an HTML comment retain `page-specific-data-here`. |
+| `practice-areas/index.html` | Parent page | Substantive, metadata incomplete | Seven practice-area cards | Canonical, title, OG, and Twitter values contain `page-specific-data-here`. |
+| `practice-areas/arbitration/index.html` | Practice detail | **Empty, 0 bytes** | Arbitration detail target | No markup, metadata, or links. |
+| `practice-areas/banking-recovery/index.html` | Practice detail | **Empty, 0 bytes** | Banking/recovery detail target | No markup, metadata, or links. |
+| `practice-areas/civil-commercial/index.html` | Practice detail | **Empty, 0 bytes** | Civil/commercial detail target | No markup, metadata, or links. |
+| `practice-areas/criminal-ni-act/index.html` | Practice detail | **Empty, 0 bytes** | Criminal/NI Act detail target | No markup, metadata, or links. |
+| `practice-areas/high-court-writ/index.html` | Practice detail | **Empty, 0 bytes** | High Court/writ detail target | No markup, metadata, or links. |
+| `practice-areas/legal-drafting-advisory/index.html` | Practice detail | **Empty, 0 bytes** | Drafting/advisory detail target | No markup, metadata, or links. |
+| `practice-areas/property/index.html` | Practice detail | **Empty, 0 bytes** | Property detail target | No markup, metadata, or links. |
+| `courts/index.html` | Parent page | Substantive | Court jurisdictions and six district-court cards | All six child routes are missing. |
+| `featured/index.html` | Parent page | Substantive | Six Featured cards | All six routes are missing. |
+| `insights/index.html` | Parent page | Substantive | Eight expandable article cards | These cards use inline `<details>` content and contain no child-page links. |
+| `contact/index.html` | Standard page | Substantive | Contact details and form | Not empty; form is mailto-based. |
+| `privacy-policy/index.html` | Policy page | Substantive | Privacy policy | Footer has a broken Terms link. |
+| `terms-of-use/index.html` | Policy page | Substantive | Terms of use | Footer has a broken self/Terms route. |
+| `standerd.html` | Standalone template | **Placeholder/incomplete** | Likely standard-page template | SEO fields and JSON-LD contain placeholders; malformed structured-data body; route is not linked from site navigation. |
+
+# 4. PRACTICE AREA INVENTORY
+
+All seven practice cards link to an existing folder and zero-byte `index.html`. Source availability means the client profile supports the broad practice subject; some card-level legal specifics are not in that profile. Every row maps to `PRACTICE_AREA`.
+
+| Card | URL | Folder / index.html | Image | Source | Template | Status |
+|---|---|---|---|---|---|---|
+| Banking & Recovery Litigation | `/practice-areas/banking-recovery/` | Exists / exists, empty | `banking.png` | Profile: banking/recovery; SARFAESI/DRT wording only on website card | PRACTICE_AREA | EXISTING_PAGE_REVIEW_REQUIRED |
+| Civil, Commercial & Contractual Matters | `/practice-areas/civil-commercial/` | Exists / exists, empty | `civil.png` | Profile: civil/commercial disputes, contracts, labour/industrial matters, MACT | PRACTICE_AREA | EXISTING_PAGE_REVIEW_REQUIRED |
+| Property Matters | `/practice-areas/property/` | Exists / exists, empty | `property.png` | Profile: property disputes, title verification, conveyancing | PRACTICE_AREA | EXISTING_PAGE_REVIEW_REQUIRED |
+| Criminal & NI Act Matters | `/practice-areas/criminal-ni-act/` | Exists / exists, empty | `criminal.png` | Profile: Section 138 NI Act prosecution and defence; broader criminal practice | PRACTICE_AREA | EXISTING_PAGE_REVIEW_REQUIRED |
+| Arbitration & Dispute Resolution | `/practice-areas/arbitration/` | Exists / exists, empty | `ARBITRATION.png` | Profile: arbitration proceedings and post-award execution | PRACTICE_AREA | EXISTING_PAGE_REVIEW_REQUIRED |
+| Constitutional & Writ Practice | `/practice-areas/high-court-writ/` | Exists / exists, empty | `delhi-high-court.png` | Profile: writ petitions and other High Court proceedings | PRACTICE_AREA | EXISTING_PAGE_REVIEW_REQUIRED |
+| Legal Drafting, Advisory & Due Diligence | `/practice-areas/legal-drafting-advisory/` | Exists / exists, empty | `drafting.png` | Profile: pleadings, notices, deeds, advisory, title searches, document vetting | PRACTICE_AREA | EXISTING_PAGE_REVIEW_REQUIRED |
+
+No orphaned practice folders or card targets were found. Card naming and slug naming are consistent. The seven blank files are not production-ready pages.
+
+# 5. COURTS INVENTORY
+
+There are **six** linked court cards, all district courts. Each target folder and `index.html` is missing. The profile names all six courts and says the advocate appears before Delhi District Courts, but it does not provide court-specific descriptions or local procedural detail. External research will be needed for those additions.
+
+| Card | URL | Folder / index.html | Image | Source | Template | Status |
+|---|---|---|---|---|---|---|
+| Karkardooma Court | `/courts/karkardooma/` | Missing / missing | `karkardooma.jpg` | Profile confirms appearance; card supplies short description | COURTS | EXTERNAL_RESEARCH_REQUIRED |
+| Tis Hazari Court | `/courts/tis-hazari/` | Missing / missing | `tis-hazari.jpg` | Same | COURTS | EXTERNAL_RESEARCH_REQUIRED |
+| Patiala House Court | `/courts/patiala-house/` | Missing / missing | `patiala-house.jpg` | Same | COURTS | EXTERNAL_RESEARCH_REQUIRED |
+| Rohini Court | `/courts/rohini/` | Missing / missing | `rohini.jpg` | Same | COURTS | EXTERNAL_RESEARCH_REQUIRED |
+| Dwarka Court | `/courts/dwarka/` | Missing / missing | `dwarka.jpg` | Same | COURTS | EXTERNAL_RESEARCH_REQUIRED |
+| Saket Court | `/courts/saket/` | Missing / missing | `saket.jpg` | Same | COURTS | EXTERNAL_RESEARCH_REQUIRED |
+
+The Delhi High Court is a separate featured section on the Courts page, but its “Learn More” link points to `/practice-areas/high-court-writ/`, not a Courts child route.
+
+# 6. FEATURED INVENTORY
+
+The Featured page has six cards. The homepage adds six more linked case cards, so the site currently signals **12 distinct Featured detail routes**. Classification is based only on the client profile and existing website; no external case lookup was performed.
+
+| Card | Category / date | URL | Target | Image | Source classification | Status |
+|---|---|---|---|---|---|---|
+| Delhi High Court dismisses plea in banking dispute | Reported Judgment · 15 Jan 2023 | `/featured/delhi-high-court-banking-dispute/` | Missing | `court_front.png` | **D** — generic title/date; no case name, number, or citation | AMBIGUOUS |
+| Important judgment in recovery matter | Significant Matter · 20 Mar 2022 | `/featured/important-recovery-matter/` | Missing | `importent_judgment.png` | **D** — no parties, court, citation, or identifiable details | AMBIGUOUS |
+| Article on Commercial Dispute Resolution | Publication · 10 Aug 2021 | `/featured/article-commercial-dispute-resolution/` | Missing | `contract.png` | **B** — website claims authorship, but no article text, publisher, or publication record | CONTENT_SOURCE_REQUIRED |
+| Understanding NI Act Prosecutions | Publication · 15 Jan 2024 | `/featured/understanding-ni-act-prosecutions/` | Missing | `featured-hero.png` | **B/C** — legal topic is in profile/site, but no original article and requires legal-source verification | EXTERNAL_RESEARCH_REQUIRED |
+| Recent Developments in Banking Recovery Proceedings | Card category says “Insights” · 12 Mar 2024 | `/featured/banking-recovery-proceedings/` | Missing | `delhi-high-court-section.jpg` | **B/C** — generic website summary; no sourced analysis | EXTERNAL_RESEARCH_REQUIRED |
+| Key Considerations in Property Disputes in Delhi | Professional Highlight · 28 Feb 2024 | `/featured/property-disputes-delhi/` | Missing | `legal.png` | **D** — no engagement, speaking event, publication, or other specific highlight identified | AMBIGUOUS |
+| Sonal Talpada v. Veerbhan Singh | Supreme Court · 2026 | `/featured/sonal-talpada-v-veerbhan-singh/` | Missing | No card image | **C** — homepage names parties and summarizes alleged decision; client profile has no case details | EXTERNAL_RESEARCH_REQUIRED |
+| Col. Ramneesh Pal Singh v. Sugandhi Aggarwal | Supreme Court · 2024 | `/featured/ramneesh-pal-singh-v-sugandhi-aggarwal/` | Missing | No card image | **C** — named parties and short summary only | EXTERNAL_RESEARCH_REQUIRED |
+| Pradeep Bhardwaj v. Priya | Supreme Court · 2025 | `/featured/pradeep-bhardwaj-v-priya/` | Missing | No card image | **C** — named parties and short summary only | EXTERNAL_RESEARCH_REQUIRED |
+| Shahjahan v. State of Uttar Pradesh | Supreme Court · 2025 | `/featured/shahjahan-v-state-of-uttar-pradesh/` | Missing | No card image | **C** — named parties and short summary only | EXTERNAL_RESEARCH_REQUIRED |
+| Sugirtha v. Gowtham | Supreme Court · 2024 | `/featured/sugirtha-v-gowtham/` | Missing | No card image | **C** — named parties and short summary only | EXTERNAL_RESEARCH_REQUIRED |
+| Shivangi Bansal v. Sahib Bansal | Supreme Court · 2025 | `/featured/shivangi-bansal-v-sahib-bansal/` | Missing | No card image | **C** — named parties and short summary only | EXTERNAL_RESEARCH_REQUIRED |
+
+The six homepage case cards contain no image. The three ambiguous Featured cards must not be assigned an identity based on guesswork. The “Recent Developments…” card also duplicates an Insights-index title and date, while “Understanding NI Act Prosecutions” appears with different dates in the two sections.
+
+# 7. INSIGHTS INVENTORY
+
+The Insights index has eight cards with dates, category labels, images, summaries, and short expanded text. They use `<details>` rather than links, so **none has a current child URL**. Separately, six homepage Insight cards do link to missing detail routes; those six are included in the master inventory.
+
+### Insights index: inline cards, not current subpage targets
+
+| Card | Category · date | Href / target | Image | Existing content / source |
+|---|---|---|---|---|
+| Recent Developments in Banking Recovery Proceedings | Banking & Recovery · 12 Mar 2024 | No href; inline disclosure | `court_front.png` | Summary and one expanded paragraph; website-only |
+| Key Considerations in Commercial Dispute Resolution | Civil & Commercial · 20 Jan 2024 | No href; inline disclosure | `contract.png` | Summary and one expanded paragraph; website-only |
+| Title Verification and Due Diligence in Property Transactions | Property Law · 15 Dec 2023 | No href; inline disclosure | `property.png` | Summary and one expanded paragraph; website-only |
+| Understanding NI Act Prosecutions | Criminal & NI Act · 10 Nov 2023 | No href; inline disclosure | `importent_judgment.png` | Summary and one expanded paragraph; website-only |
+| Scope and Maintainability of Writ Petitions | Constitutional & Writ · 05 Oct 2023 | No href; inline disclosure | `delhi-high-court.png` | Summary and one expanded paragraph; website-only |
+| Arbitration as an Effective Dispute Resolution Mechanism | Arbitration · 18 Aug 2023 | No href; inline disclosure | `ARBITRATION.png` | Summary and one expanded paragraph; website-only |
+| The Changing Landscape of Indian Jurisprudence | General · 26 Jul 2023 | No href; inline disclosure | `legal.png` | Summary and one expanded paragraph; website-only |
+| The Role of Law in a Fairer and More Just Society | General · 14 Jun 2023 | No href; inline disclosure | `justice-equality-trust.png` | Summary and one expanded paragraph; website-only |
+| Legal Drafting: Principles and Best Practices | Practice Perspective · 02 May 2023 | No href; inline disclosure | `contract.png` | Summary and one expanded paragraph; website-only |
+
+The eight index cards are partially documented, not full articles; if expanded into separate pages, source and route decisions would be needed. They are not counted as future subpages in this audit because they have no page links.
+
+### Homepage-linked Insights targets
+
+| Card | Current href / target | Image | Source and future status |
+|---|---|---|---|
+| Child Custody: Why the Welfare of the Child Comes First | `/insights/child-custody-welfare-of-child/` | No card image | Existing homepage summary only; client profile has no family-law/case content; EXTERNAL_RESEARCH_REQUIRED |
+| Maintenance Under BNSS Section 144: Understanding the Current Framework | `/insights/maintenance-under-bnss/` | No card image | Existing homepage summary only; EXTERNAL_RESEARCH_REQUIRED |
+| Matrimonial Cruelty Under the BNS: Understanding Sections 85 and 86 | `/insights/cruelty-under-bns/` | No card image | Existing homepage summary only; EXTERNAL_RESEARCH_REQUIRED |
+| Irretrievable Breakdown of Marriage: What the Supreme Court Can Consider | `/insights/irretrievable-breakdown-of-marriage/` | No card image | Existing homepage summary only; EXTERNAL_RESEARCH_REQUIRED |
+| Visitation Rights During Divorce: Balancing Parental Access and Child Welfare | `/insights/visitation-rights-during-divorce/` | No card image | Existing homepage summary only; EXTERNAL_RESEARCH_REQUIRED |
+| Matrimonial Disputes and Criminal Proceedings: Why Specific Allegations Matter | `/insights/matrimonial-disputes-specific-allegations/` | No card image | Existing homepage summary only; EXTERNAL_RESEARCH_REQUIRED |
+
+The homepage summaries make specific legal claims but have no citations. They require reliable research before drafting full articles.
+
+# 8. COMPLETE FUTURE SUBPAGE MASTER LIST
+
+The route set below comprises the **31 pages currently signaled by links**. “Current Card URL” is the existing href; “final URL” preserves it pending approval. All future pages need unique SEO data, canonical, sitemap entry, and internal linking as shown.
+
+| ID | Parent Section | Card Title | Current Card URL | Intended Final URL | Intended Template | Existing Folder? | Existing index.html? | Existing Content? | Card Image | Image Path | Client Source Available? | Existing Website Source Available? | External Research Required? | Content Confidence | SEO Data Required | Sitemap Update Required | Internal Links Required | Status | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| F01 | Featured | Delhi High Court dismisses plea in banking dispute | `/featured/delhi-high-court-banking-dispute/` | Same | FEATURED | No | No | Card only | Court building | `/assets/images/courts/court_front.png` | No | Yes | Yes, if identifiable | Low | Unique all | Yes | Parent, breadcrumb, CTA | AMBIGUOUS | No parties/case number/citation |
+| F02 | Featured | Important judgment in recovery matter | `/featured/important-recovery-matter/` | Same | FEATURED | No | No | Card only | Gavel | `/assets/images/featured/importent_judgment.png` | No | Yes | Yes, if identifiable | Low | Unique all | Yes | Parent, breadcrumb, CTA | AMBIGUOUS | No case identity |
+| F03 | Featured | Article on Commercial Dispute Resolution | `/featured/article-commercial-dispute-resolution/` | Same | FEATURED | No | No | Card only | Contract | `/assets/images/featured/contract.png` | Partial | Yes | Yes; obtain original/publisher | Low | Unique all | Yes | Parent, breadcrumb, related practice, CTA | CONTENT_SOURCE_REQUIRED | Authorship/publication unsupported by client file |
+| F04 | Featured | Understanding NI Act Prosecutions | `/featured/understanding-ni-act-prosecutions/` | Same | FEATURED | No | No | Card only | Law books | `/assets/images/featured-hero.png` | Partial | Yes | Yes | Moderate-low | Unique all | Yes | Parent, breadcrumb, related practice, CTA | EXTERNAL_RESEARCH_REQUIRED | Also an Insights-index card with a different date |
+| F05 | Featured | Recent Developments in Banking Recovery Proceedings | `/featured/banking-recovery-proceedings/` | Same | FEATURED | No | No | Card only | Court section | `/assets/images/delhi-high-court-section.jpg` | Partial | Yes | Yes | Low | Unique all | Yes | Parent, breadcrumb, related practice, CTA | EXTERNAL_RESEARCH_REQUIRED | Duplicate title/date in Insights index; category mismatch |
+| F06 | Featured | Key Considerations in Property Disputes in Delhi | `/featured/property-disputes-delhi/` | Same | FEATURED | No | No | Card only | Legal document | `/assets/images/featured/legal.png` | Partial | Yes | Yes, subject to event/source | Low | Unique all | Yes | Parent, breadcrumb, related practice, CTA | AMBIGUOUS | “Professional Highlight” lacks engagement details |
+| F07 | Featured | Sonal Talpada v. Veerbhan Singh | `/featured/sonal-talpada-v-veerbhan-singh/` | Same | FEATURED | No | No | Homepage card only | None | None | No | Yes | Yes | Low | Unique all | Yes | Homepage, Featured parent, breadcrumb, CTA | EXTERNAL_RESEARCH_REQUIRED | Supreme Court · 2026 per card |
+| F08 | Featured | Col. Ramneesh Pal Singh v. Sugandhi Aggarwal | `/featured/ramneesh-pal-singh-v-sugandhi-aggarwal/` | Same | FEATURED | No | No | Homepage card only | None | None | No | Yes | Yes | Low | Unique all | Yes | Homepage, Featured parent, breadcrumb, CTA | EXTERNAL_RESEARCH_REQUIRED | Supreme Court · 2024 per card |
+| F09 | Featured | Pradeep Bhardwaj v. Priya | `/featured/pradeep-bhardwaj-v-priya/` | Same | FEATURED | No | No | Homepage card only | None | None | No | Yes | Yes | Low | Unique all | Yes | Homepage, Featured parent, breadcrumb, CTA | EXTERNAL_RESEARCH_REQUIRED | Supreme Court · 2025 per card |
+| F10 | Featured | Shahjahan v. State of Uttar Pradesh | `/featured/shahjahan-v-state-of-uttar-pradesh/` | Same | FEATURED | No | No | Homepage card only | None | None | No | Yes | Yes | Low | Unique all | Yes | Homepage, Featured parent, breadcrumb, CTA | EXTERNAL_RESEARCH_REQUIRED | Supreme Court · 2025 per card |
+| F11 | Featured | Sugirtha v. Gowtham | `/featured/sugirtha-v-gowtham/` | Same | FEATURED | No | No | Homepage card only | None | None | No | Yes | Yes | Low | Unique all | Yes | Homepage, Featured parent, breadcrumb, CTA | EXTERNAL_RESEARCH_REQUIRED | Supreme Court · 2024 per card |
+| F12 | Featured | Shivangi Bansal v. Sahib Bansal | `/featured/shivangi-bansal-v-sahib-bansal/` | Same | FEATURED | No | No | Homepage card only | None | None | No | Yes | Yes | Low | Unique all | Yes | Homepage, Featured parent, breadcrumb, CTA | EXTERNAL_RESEARCH_REQUIRED | Supreme Court · 2025 per card |
+| C01 | Courts | Karkardooma Court | `/courts/karkardooma/` | Same | COURTS | No | No | Card only | Court photo | `/assets/images/courts/karkardooma.jpg` | Partial | Yes | Yes | Moderate for appearance; low for details | Unique all | Yes | Courts parent, breadcrumb, related practice, CTA | EXTERNAL_RESEARCH_REQUIRED | Court identity/appearance supported |
+| C02 | Courts | Tis Hazari Court | `/courts/tis-hazari/` | Same | COURTS | No | No | Card only | Court photo | `/assets/images/courts/tis-hazari.jpg` | Partial | Yes | Yes | Moderate for appearance; low for details | Unique all | Yes | Courts parent, breadcrumb, related practice, CTA | EXTERNAL_RESEARCH_REQUIRED | Court identity/appearance supported |
+| C03 | Courts | Patiala House Court | `/courts/patiala-house/` | Same | COURTS | No | No | Card only | Court photo | `/assets/images/courts/patiala-house.jpg` | Partial | Yes | Yes | Moderate for appearance; low for details | Unique all | Yes | Courts parent, breadcrumb, related practice, CTA | EXTERNAL_RESEARCH_REQUIRED | Court identity/appearance supported |
+| C04 | Courts | Rohini Court | `/courts/rohini/` | Same | COURTS | No | No | Card only | Court photo | `/assets/images/courts/rohini.jpg` | Partial | Yes | Yes | Moderate for appearance; low for details | Unique all | Yes | Courts parent, breadcrumb, related practice, CTA | EXTERNAL_RESEARCH_REQUIRED | Court identity/appearance supported |
+| C05 | Courts | Dwarka Court | `/courts/dwarka/` | Same | COURTS | No | No | Card only | Court photo | `/assets/images/courts/dwarka.jpg` | Partial | Yes | Yes | Moderate for appearance; low for details | Unique all | Yes | Courts parent, breadcrumb, related practice, CTA | EXTERNAL_RESEARCH_REQUIRED | Court identity/appearance supported |
+| C06 | Courts | Saket Court | `/courts/saket/` | Same | COURTS | No | No | Card only | Court photo | `/assets/images/courts/saket.jpg` | Partial | Yes | Yes | Moderate for appearance; low for details | Unique all | Yes | Courts parent, breadcrumb, related practice, CTA | EXTERNAL_RESEARCH_REQUIRED | Court identity/appearance supported |
+| P01 | Practice Areas | Banking & Recovery Litigation | `/practice-areas/banking-recovery/` | Same | PRACTICE_AREA | Yes | Yes, empty | None | Banking records | `/assets/images/banking.png` | Yes, broad scope | Yes | Yes for statutory/current-law detail | Moderate | Unique all | Yes | Parent, breadcrumb, related courts/practices, CTA | EXISTING_PAGE_REVIEW_REQUIRED | SARFAESI/DRT details need validation |
+| P02 | Practice Areas | Civil, Commercial & Contractual Matters | `/practice-areas/civil-commercial/` | Same | PRACTICE_AREA | Yes | Yes, empty | None | Legal documents | `/assets/images/civil.png` | Yes | Yes | Yes for legal framework | Moderate | Unique all | Yes | Parent, breadcrumb, related practices, CTA | EXISTING_PAGE_REVIEW_REQUIRED | Profile has broad matter list |
+| P03 | Practice Areas | Property Matters | `/practice-areas/property/` | Same | PRACTICE_AREA | Yes | Yes, empty | None | House | `/assets/images/property.png` | Yes | Yes | Yes for legal framework | Moderate | Unique all | Yes | Parent, breadcrumb, related practices, CTA | EXISTING_PAGE_REVIEW_REQUIRED | Profile includes title/conveyancing |
+| P04 | Practice Areas | Criminal & NI Act Matters | `/practice-areas/criminal-ni-act/` | Same | PRACTICE_AREA | Yes | Yes, empty | None | Handcuffs | `/assets/images/criminal.png` | Yes | Yes | Yes for statutory/current-law detail | Moderate | Unique all | Yes | Parent, breadcrumb, related courts/practices, CTA | EXISTING_PAGE_REVIEW_REQUIRED | Profile covers Section 138 NI Act |
+| P05 | Practice Areas | Arbitration & Dispute Resolution | `/practice-areas/arbitration/` | Same | PRACTICE_AREA | Yes | Yes, empty | None | Arbitration image | `/assets/images/ARBITRATION.png` | Yes | Yes | Yes for legal framework | Moderate | Unique all | Yes | Parent, breadcrumb, related practices, CTA | EXISTING_PAGE_REVIEW_REQUIRED | Profile confirms proceedings/post-award execution |
+| P06 | Practice Areas | Constitutional & Writ Practice | `/practice-areas/high-court-writ/` | Same | PRACTICE_AREA | Yes | Yes, empty | None | High Court image | `/assets/images/delhi-high-court.png` | Yes | Yes | Yes for legal framework | Moderate | Unique all | Yes | Parent, breadcrumb, Courts parent, CTA | EXISTING_PAGE_REVIEW_REQUIRED | Profile confirms writ and High Court work |
+| P07 | Practice Areas | Legal Drafting, Advisory & Due Diligence | `/practice-areas/legal-drafting-advisory/` | Same | PRACTICE_AREA | Yes | Yes, empty | None | Drafting image | `/assets/images/drafting.png` | Yes | Yes | Yes for legal framework | Moderate | Unique all | Yes | Parent, breadcrumb, related practices, CTA | EXISTING_PAGE_REVIEW_REQUIRED | Profile gives several specific services |
+| I01 | Insights | Child Custody: Why the Welfare of the Child Comes First | `/insights/child-custody-welfare-of-child/` | Same | INSIGHTS | No | No | Homepage summary only | None | None | No | Yes | Yes | Low | Unique all | Yes | Homepage, Insights parent, breadcrumb, related content, CTA | EXTERNAL_RESEARCH_REQUIRED | Needs cited case support |
+| I02 | Insights | Maintenance Under BNSS Section 144: Understanding the Current Framework | `/insights/maintenance-under-bnss/` | Same | INSIGHTS | No | No | Homepage summary only | None | None | No | Yes | Yes | Low | Unique all | Yes | Homepage, Insights parent, breadcrumb, related content, CTA | EXTERNAL_RESEARCH_REQUIRED | Statutory claim needs verification |
+| I03 | Insights | Matrimonial Cruelty Under the BNS: Understanding Sections 85 and 86 | `/insights/cruelty-under-bns/` | Same | INSIGHTS | No | No | Homepage summary only | None | None | No | Yes | Yes | Low | Unique all | Yes | Homepage, Insights parent, breadcrumb, related content, CTA | EXTERNAL_RESEARCH_REQUIRED | Statutory claim needs verification |
+| I04 | Insights | Irretrievable Breakdown of Marriage: What the Supreme Court Can Consider | `/insights/irretrievable-breakdown-of-marriage/` | Same | INSIGHTS | No | No | Homepage summary only | None | None | No | Yes | Yes | Low | Unique all | Yes | Homepage, Insights parent, breadcrumb, related content, CTA | EXTERNAL_RESEARCH_REQUIRED | Article must carefully qualify legal position |
+| I05 | Insights | Visitation Rights During Divorce: Balancing Parental Access and Child Welfare | `/insights/visitation-rights-during-divorce/` | Same | INSIGHTS | No | No | Homepage summary only | None | No card image | No | Yes | Yes | Low | Unique all | Yes | Homepage, Insights parent, breadcrumb, related content, CTA | EXTERNAL_RESEARCH_REQUIRED | Needs current legal sources |
+| I06 | Insights | Matrimonial Disputes and Criminal Proceedings: Why Specific Allegations Matter | `/insights/matrimonial-disputes-specific-allegations/` | Same | INSIGHTS | No | No | Homepage summary only | None | None | No | Yes | Yes | Low | Unique all | Yes | Homepage, Insights parent, breadcrumb, related content, CTA | EXTERNAL_RESEARCH_REQUIRED | Card refers to recent Supreme Court decisions |
+
+There are **no route collisions among these 31 targets**. Court, Featured, and homepage-linked Insight rows have missing folders; the practice routes have existing but empty pages.
+
+# 9. EXISTING VS MISSING
+
+### Already Exists
+
+- **Complete detail pages:** 0.
+- **Detail-route files:** 7 Practice Area `index.html` files exist, but are empty.
+- Parent pages exist for all four sections.
+- The Courts subpage template has some visual evidence in the design montage; this is not an implemented court detail page.
+
+### Folder Exists but Page Is Empty/Incomplete
+
+All seven `/practice-areas/<slug>/` folders exist. Each contains a zero-byte `index.html`.
+
+### Folder Missing
+
+All six Courts routes, all 12 Featured routes, and all six homepage-linked Insights routes are missing: **24 folders and pages**.
+
+### Page Exists but Needs Template Review
+
+All seven empty Practice Area files need review against the eventual approved template before replacement or population. The standalone `standerd.html` is a separate incomplete placeholder template, not a detail page.
+
+# 10. CLIENT SOURCE MATERIAL MATRIX
+
+| Subject | Source File | Relevant Information | Confidence |
+|---|---|---|---|
+| Professional identity and positioning | `Sunil_Kumar_Professional_Legal_Profile.pdf` | Advocate Sunil Kumar Upadhyay; independent advocate and managing partner/proprietor of UPADHYAY & ASSOCIATES | High as client-provided; confirm preferred public name |
+| Experience and timeline | Same PDF | Practice since 2012; profile states “14+ years” | High as client-provided |
+| Education | Same PDF | LL.B. Professional, M.A., B.A.; no institution names or graduation dates | High for degrees stated; those missing details are **UNKNOWN — MANUAL REVIEW REQUIRED** |
+| Practice areas | Same PDF | Banking/recovery, NI Act Section 138, PSS Act, arbitration, High Court/writ, civil/commercial/contractual, property, drafting, advisory, due diligence, labour/industrial, MACT | High for broad client-supplied scope |
+| Courts | Same PDF | Delhi High Court and District Courts across Delhi/NCR; specifically lists Tis Hazari, Karkardooma, Patiala House, Rohini, Dwarka, Saket | High for stated appearances; no court-specific operational histories |
+| Bar enrollment and memberships | Same PDF | Bar Council of Delhi / Bar Council of India; enrollment no. D/725-A/2012; Shahdara Bar Association and Lawyer Welfare Association memberships | High as supplied; do not embellish |
+| Cases, judgments, publications, engagements | Same PDF | No identifiable cases, citations, judgments, named publications, speaking events, or awards found | No supporting client source found |
+| Chamber address and contact | Same PDF | Chamber address at Karkardooma Courts; two phone numbers and one email. Current site uses one of those phone numbers and the same email. | High as client-supplied; confirm which phone numbers should be public |
+| Residential address | Same PDF | A residential address is present in the profile but is not needed for these subpages | Present in source; public-use approval required |
+| Design references | `docs/design/` | Page comps/screenshots; not factual professional source material | Visual reference only |
+| Other client docs | `docs/` | The PDF and design PNGs are the only discovered files; no DOC/DOCX, spreadsheet, or additional matter documents | Complete filesystem inventory |
+
+No conflicting client documents were found. The main unresolved issues are unsupported or conflicting **website** claims: Homepage case summaries are absent from the client PDF; a Featured “Understanding NI Act Prosecutions” card is dated 15 Jan 2024 while the Insights index version is dated 10 Nov 2023; and the banking-recovery item appears in both sections with the same title/date.
+
+# 11. SOURCE AVAILABILITY MATRIX
+
+“Website source” here means card copy or existing inline snippet, not a verified legal source. The complete page-by-page values are in Section 8; grouped records below make the source limits explicit.
+
+| Page(s) | Client Source | Existing Website Source | External Research Needed | Confidence |
+|---|---|---|---|---|
+| F01–F02, F06 | No matter-specific source | Generic Featured card text | Yes, only after matter/event identification | Low |
+| F03 | Partial commercial-practice context; no publication | Card title, authorship claim, excerpt | Yes; original publication/source needed | Low |
+| F04–F05 | Partial practice-topic context | Featured summaries; related Insights snippet for some content | Yes | Low–moderate |
+| F07–F12 | No case documents | Homepage titles, years, short summaries | Yes; verify parties, court, year, judgment, citation, outcome | Low |
+| C01–C06 | Court names and general appearance claims | Card descriptions and images | Yes for detailed court-specific information | Moderate for appearance; low for added detail |
+| P01–P07 | Broad practice scope in profile | Card descriptions | Yes for detailed/current legal-framework explanations; profile remains primary for personal practice claims | Moderate |
+| I01–I06 | No relevant family-law or named-case material | Homepage summaries only | Yes; all legal claims and cited decisions | Low |
+
+# 12. IMAGE MAPPING
+
+For linked future detail pages, the default is to reuse the exact card asset where one exists. Homepage-only case and Insight cards have no image; the correct detail-page image treatment is **UNKNOWN — MANUAL REVIEW REQUIRED** until the template is confirmed.
+
+| Page | Card Image | Existing Asset | Reuse Exact Image? | Missing Asset? |
+|---|---|---|---|---|
+| P01 Banking & Recovery | Banking records | `banking.png` | Yes | No |
+| P02 Civil/Commercial | Legal documents | `civil.png` | Yes | No |
+| P03 Property | House | `property.png` | Yes | No |
+| P04 Criminal/NI Act | Handcuffs | `criminal.png` | Yes | No |
+| P05 Arbitration | Arbitration image | `ARBITRATION.png` | Yes | No |
+| P06 High Court/Writ | High Court image | `delhi-high-court.png` | Yes | No |
+| P07 Drafting/Advisory | Drafting image | `drafting.png` | Yes | No |
+| C01 Karkardooma | Court photo | `karkardooma.jpg` | Yes | No |
+| C02 Tis Hazari | Court photo | `tis-hazari.jpg` | Yes | No |
+| C03 Patiala House | Court photo | `patiala-house.jpg` | Yes | No |
+| C04 Rohini | Court photo | `rohini.jpg` | Yes | No |
+| C05 Dwarka | Court photo | `dwarka.jpg` | Yes | No |
+| C06 Saket | Court photo | `saket.jpg` | Yes | No |
+| F01 Delhi HC banking judgment | Court building | `courts/court_front.png` | Yes | No |
+| F02 Recovery judgment | Gavel | `featured/importent_judgment.png` | Yes | No |
+| F03 Commercial dispute article | Contract | `featured/contract.png` | Yes | No |
+| F04 NI Act | Law books | `featured-hero.png` | Yes | No |
+| F05 Banking recovery | Court section image | `delhi-high-court-section.jpg` | Yes | No |
+| F06 Property disputes | Legal document | `featured/legal.png` | Yes | No |
+| F07–F12 Supreme Court matters | No card image | None | No approved source image | Yes / template dependent |
+| I01–I06 homepage Insight routes | No card image | None | No approved source image | Yes / template dependent |
+
+The two `court_front.png` files at the image root and in `images/courts/` are byte-identical. Several icon logo exports are also duplicates. Unused-looking assets include court-forum/hero imagery; no cleanup was performed.
+
+# 13. SEO INVENTORY
+
+**Current implementation**
+
+- Existing directory routes and most canonicals use `https://advsunilkumar.in/` and trailing slashes.
+- Existing pages generally have title, description, robots, canonical, Open Graph, and Twitter metadata.
+- Structured data is present on substantive pages: `Person`/`LegalService` on the homepage; `ProfilePage`, `CollectionPage`, `ContactPage`, or `WebPage` structures on other pages. Practice Areas also has an `ItemList`.
+- The standalone template has unresolved placeholders, including invalid JSON-LD content. The Practice Areas parent has placeholder suffixes in SEO fields.
+- The sitemap and `robots.txt` are zero bytes; there is no working sitemap route inventory.
+
+**For every future detail page**
+
+- Generate a unique title and meta description.
+- Set canonical to the final directory URL, with trailing slash.
+- Add matching Open Graph and Twitter title/description; choose a valid, relevant OG image. For 12 homepage-only cards, no card image is supplied.
+- Add page-appropriate structured data only where supported by the actual page content: likely `Article` for sourced editorial content and a suitable page/service representation for practice/court pages. A case card must not be marked as a reported judgment without verification.
+- Add each approved canonical detail route to the sitemap.
+- Ensure navigation, breadcrumbs, parent links, and contextual internal links resolve to the canonical route.
+
+# 14. LINK / ROUTE AUDIT
+
+**Missing page targets: 24 unique child routes**
+
+- Courts: `/courts/karkardooma/`, `/courts/tis-hazari/`, `/courts/patiala-house/`, `/courts/rohini/`, `/courts/dwarka/`, `/courts/saket/`.
+- Featured index: `/featured/delhi-high-court-banking-dispute/`, `/featured/important-recovery-matter/`, `/featured/article-commercial-dispute-resolution/`, `/featured/understanding-ni-act-prosecutions/`, `/featured/banking-recovery-proceedings/`, `/featured/property-disputes-delhi/`.
+- Homepage Featured cards: `/featured/sonal-talpada-v-veerbhan-singh/`, `/featured/ramneesh-pal-singh-v-sugandhi-aggarwal/`, `/featured/pradeep-bhardwaj-v-priya/`, `/featured/shahjahan-v-state-of-uttar-pradesh/`, `/featured/sugirtha-v-gowtham/`, `/featured/shivangi-bansal-v-sahib-bansal/`.
+- Homepage Insights cards: `/insights/child-custody-welfare-of-child/`, `/insights/maintenance-under-bnss/`, `/insights/cruelty-under-bns/`, `/insights/irretrievable-breakdown-of-marriage/`, `/insights/visitation-rights-during-divorce/`, `/insights/matrimonial-disputes-specific-allegations/`.
+
+**Other findings**
+
+- Two policy footers link to the nonexistent `/term-of-use/`; the existing route is `/terms-of-use/`. This is one additional unique broken page route, two link occurrences.
+- `/assets/icons/site.webmanifest` is referenced by multiple pages but does not exist at that path. A manifest exists inside the logo-package image folder; Insights points there directly.
+- Homepage references `/assets/images/arbitration.png` (lowercase), but the actual file is `ARBITRATION.png`; this may fail on case-sensitive hosting. The practice and Insights pages use the actual uppercase name.
+- All seven Practice Area card routes have folders but resolve to blank files.
+- No duplicate intended URLs were found among the 31 targets. There is duplicate/overlapping article content between Featured and Insights, described above.
+- All practice folders correspond to cards; no orphaned practice-area folders were found. No court-detail folders exist.
+- `standerd.html` is an unlinked, directly addressable placeholder/template page.
+- Directory canonicals are generally slash-terminated; the placeholder template canonical is malformed and points toward the Terms page without consistent slash syntax.
+- Insights index cards themselves have no child links; their “Read More” controls expand inline.
+
+# 15. CSS / JS ARCHITECTURE AUDIT
+
+**CSS**
+
+- `global.css` contains shared header/desktop and mobile navigation, hero, buttons, shared containers, CTA/footer, base styles, and responsive rules. It also includes reset-like base declarations.
+- `components.css`, `reset.css`, and `variables.css` are zero bytes.
+- `pages.css` is the substantial page-specific stylesheet. It defines the design tokens and extensive styles for current homepage and section pages. Tokens include warm ivory/white, charcoal, burgundy (`#701b27`), serif display and sans-serif body stacks, 1320px content width, 1400px container width, and a 68px header. Shared responsive breakpoints include 1100px, 767px, and 480px; additional page-specific breakpoints exist.
+- Reusable hero/card/CTA/footer styles exist in the populated CSS files. There are no named `practice-area-detail`, `court-detail`, `featured-detail`, or `insight-detail` selectors.
+
+**JavaScript**
+
+- `main.js`: back-to-top behavior and Featured-card filtering.
+- `navigation.js`: active navigation state, mobile menu toggle/accessibility, Escape close, and breakpoint close.
+- `insights.js`: Insights filters and mailto-based newsletter interaction.
+- `legal-page.js`: policy table-of-contents scroll tracking.
+- No current script supplies detail-page-specific functionality.
+
+Detail pages can use the existing static HTML, shared CSS, and Vanilla JS. If template-specific styling is needed, it belongs in the existing page-style architecture; the audit found no architectural blocker requiring a new framework or build system.
+
+# 16. TEMPLATE MAPPING
+
+The page-by-page mapping is in the “Intended Template” column of Section 8. The available design evidence is uneven:
+
+| Page(s) | Template | Why |
+|---|---|---|
+| F01–F12 | FEATURED | Featured listing and homepage links place these under Featured. `featured_page.png` is a parent-listing comp, not a detail-page comp. |
+| C01–C06 | COURTS | Cards are in Courts and `courts_ALL.png` contains court-specific desktop/mobile mockups. |
+| P01–P07 | PRACTICE_AREA | All seven are linked from the Practice Areas parent. The available practice-area comps show the parent grid, not child-page layouts. |
+| I01–I06 | INSIGHTS | Homepage Insight links place these under Insights. `insight_page.png` shows the article listing, not child-page layouts. |
+
+**Template reference audit:** `courts_ALL.png` is a montage containing Courts page and individual court-page designs, with desktop and mobile views. The rest of the discovered visual references—including `featured_page.png`, `insight_page.png`, `practicing_areas.png`, `mobile+Desktop_view.png`, and `mobile_view.png`—show site/parent-page compositions. Separate approved Featured, Insights, and Practice Area detail comps were not found. Their detail-page hierarchy, responsive specifics, and image treatment are **UNKNOWN — MANUAL REVIEW REQUIRED**. The available comps do not establish tablet behavior for detail pages.
+
+# 17. IMPLEMENTATION DEPENDENCIES
+
+- **Featured:** Confirm or supply case identities/citations for F01–F02; verify the six homepage-listed Supreme Court matters; obtain the original commercial-dispute publication; verify F06’s professional-highlight basis; reconcile duplicate topics and dates; confirm image treatment for homepage-only cards; then approve the missing detail template.
+- **Courts:** Use the client profile for appearance claims; research only additional court-specific factual context; confirm the visual hierarchy from `courts_ALL.png`; reuse each card image; then populate six distinct routes and add sitemap/internal links.
+- **Practice Areas:** Compare the seven empty files against the approved child template once supplied/confirmed; use profile first for claims; verify statutes and any expanded legal descriptions; reuse card images; then add unique metadata and sitemap entries.
+- **Insights:** Verify and source the six homepage summaries, especially statute and case-law claims; confirm whether these six are the intended full Insights detail set; choose approved image treatment; then create pages, related links, metadata, and sitemap entries.
+- **Cross-cutting before implementation:** Resolve placeholders, missing manifest and route defects; confirm the preferred public identity/name; confirm which contact phone number(s) to publish; validate the template references for all four subpage types. No dependency manifest or build tooling is required.
+
+# 18. RISKS AND AMBIGUITIES
+
+- **Ambiguous judgments/highlights:** F01 and F02 lack case identifiers; F06 does not identify a specific event, engagement, or source. Do not invent matter identities.
+- **Unverified case claims:** Six homepage Featured cards name Supreme Court parties and years but have no citations or supporting client documents. Verify identity, year, court, decision, summary, and relevance before publication.
+- **Unsupported publication claim:** The commercial-dispute card says the advocate authored an article but gives no publication/source.
+- **Conflicting/duplicated website content:** “Understanding NI Act Prosecutions” has different dates across Featured and Insights. Banking Recovery appears in both sections with the same title/date; the Featured card labels it “Insights” while its filter category is `significant-matters`.
+- **Legal-content risk:** Homepage Insight summaries make specific claims about BNSS, BNS, Supreme Court decisions, maintenance, custody, and matrimonial disputes without sources. They need external research and careful qualification.
+- **Template gap:** Courts has a detail montage, but no separate child-page comps were discovered for Featured, Insights, or Practice Areas. Do not assume the parent designs are approved detail templates.
+- **No card imagery:** The 12 homepage-only Featured/Insights detail targets have no card images; detail-page image assignment is unresolved.
+- **Metadata and routing defects:** Placeholder SEO in the Practice Areas parent and standalone template; malformed template JSON-LD; empty sitemap and robots; broken Terms links; missing manifest path; case-mismatched image filename.
+- **Potentially unsupported/incomplete claims:** The client PDF provides degrees without institutions or dates. Do not fill those gaps. The client profile contains a residential address; publishing it would require explicit approval.
+- **Documentation drift:** `README.md` describes a “component-based frontend” despite the actual static architecture and also claims sitemap/robots support. `project structure.txt` omits actual folders/pages. `output/README.md` and `output/manifest.json` contain merge markers and stale claims (for example, that current Contact/Insights pages are empty); they are not reliable evidence for current source state.
+
+# 19. RECOMMENDED IMPLEMENTATION ORDER
+
+1. **Featured** — most fact-sensitive; resolve judgment identities, publications, and engagement claims first, before creating pages that could amplify unsupported claims.
+2. **Courts** — client source identifies six courts, matching images exist, and `courts_ALL.png` provides the strongest child-page design evidence.
+3. **Practice Areas** — seven targets are already linked and have folders, card images, and broad supporting client-profile material; first confirm the detail template and statutory scope.
+4. **Insights** — six separate homepage routes require research-heavy legal articles; resolve the distinction from the eight inline Insights-index cards before drafting.
+
+This order preserves the requested sequence while prioritizing verification and the strongest available design/source support.
+
+# 20. IMPLEMENTATION MANIFEST
+
+```text
+TOTAL_PARENT_SECTIONS: 4
+TOTAL_EXISTING_DETAIL_PAGES: 7 (all zero-byte files; complete detail pages: 0)
+TOTAL_FUTURE_SUBPAGES: 31
+FEATURED_COUNT: 12
+COURTS_COUNT: 6
+PRACTICE_AREA_COUNT: 7
+INSIGHTS_COUNT: 6
+
+READY_TO_IMPLEMENT: 0
+EXISTING_PAGE_REVIEW_REQUIRED: 7
+CONTENT_SOURCE_REQUIRED: 1
+EXTERNAL_RESEARCH_REQUIRED: 20
+ROUTE_CONFLICT: 0
+AMBIGUOUS: 3
+
+MISSING_FOLDERS: 24
+EXISTING_EMPTY_FOLDERS: 0 (seven practice folders contain empty index.html files)
+EXISTING_INCOMPLETE_PAGES: 7 detail pages (plus standalone placeholder template and parent metadata issues)
+BROKEN_LINKS: 25 unique broken page routes (24 child routes + /term-of-use/)
+ORPHAN_PAGES: 1 (standerd.html template)
+
+TEMPLATE_FEATURED: 12
+TEMPLATE_COURTS: 6
+TEMPLATE_PRACTICE_AREA: 7
+TEMPLATE_INSIGHTS: 6
+```
+
+**Audit complete. No files were changed. Stopping here pending your approval.**
