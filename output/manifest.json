@@ -21,6 +21,7 @@
       "height": 844
     }
   },
+<<<<<<< HEAD
   "fullPageCapture": true,
   "pages": [
     {
@@ -61,11 +62,18 @@
       "warnings": []
     },
     {
+=======
+  "pages": [
+    {
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "name": "about",
       "route": "/about/",
       "source": "about/index.html",
       "title": "About Sunil Kumar, Advocate | Delhi",
+<<<<<<< HEAD
       "sourceBytes": 33250,
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "desktop": [
         "001.png"
       ],
@@ -79,18 +87,27 @@
         "desktop": {
           "width": 1440,
           "height": 2194,
+<<<<<<< HEAD
           "documentHeight": 2194,
           "scrollY": 0
+=======
+          "documentHeight": 2194
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "tablet": {
           "width": 768,
           "height": 2566,
+<<<<<<< HEAD
           "documentHeight": 2566,
           "scrollY": 0
+=======
+          "documentHeight": 2566
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "mobile": {
           "width": 390,
           "height": 3905,
+<<<<<<< HEAD
           "documentHeight": 3905,
           "scrollY": 0
         }
@@ -98,13 +115,22 @@
       "warnings": [
         "tablet: 1 image(s) failed to load."
       ]
+=======
+          "documentHeight": 3905
+        }
+      },
+      "warnings": []
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
     },
     {
       "name": "contact",
       "route": "/contact/",
       "source": "contact/index.html",
       "title": "",
+<<<<<<< HEAD
       "sourceBytes": 0,
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "desktop": [
         "001.png"
       ],
@@ -118,6 +144,7 @@
         "desktop": {
           "width": 1440,
           "height": 900,
+<<<<<<< HEAD
           "documentHeight": 900,
           "scrollY": 0
         },
@@ -136,6 +163,23 @@
       },
       "warnings": [
         "Source HTML is empty (0 bytes); captured the locally served blank page as-is."
+=======
+          "documentHeight": 900
+        },
+        "tablet": {
+          "width": 768,
+          "height": 1024,
+          "documentHeight": 1024
+        },
+        "mobile": {
+          "width": 390,
+          "height": 844,
+          "documentHeight": 844
+        }
+      },
+      "warnings": [
+        "Source HTML is empty (0 bytes); captured the served blank page as-is."
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       ]
     },
     {
@@ -143,7 +187,10 @@
       "route": "/courts/",
       "source": "courts/index.html",
       "title": "Courts & Legal Forums | Sunil Kumar, Advocate, Delhi",
+<<<<<<< HEAD
       "sourceBytes": 34753,
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "desktop": [
         "001.png"
       ],
@@ -157,20 +204,32 @@
         "desktop": {
           "width": 1440,
           "height": 3225,
+<<<<<<< HEAD
           "documentHeight": 3225,
           "scrollY": 0
+=======
+          "documentHeight": 3225
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "tablet": {
           "width": 768,
           "height": 2899,
+<<<<<<< HEAD
           "documentHeight": 2899,
           "scrollY": 0
+=======
+          "documentHeight": 2899
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "mobile": {
           "width": 390,
           "height": 3987,
+<<<<<<< HEAD
           "documentHeight": 3987,
           "scrollY": 0
+=======
+          "documentHeight": 3987
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         }
       },
       "warnings": []
@@ -180,7 +239,10 @@
       "route": "/featured/",
       "source": "featured/index.html",
       "title": "Featured Matters & Professional Highlights | Adv. Sunil Kumar",
+<<<<<<< HEAD
       "sourceBytes": 44959,
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "desktop": [
         "001.png"
       ],
@@ -194,20 +256,65 @@
         "desktop": {
           "width": 1440,
           "height": 2266,
+<<<<<<< HEAD
           "documentHeight": 2266,
           "scrollY": 0
+=======
+          "documentHeight": 2266
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "tablet": {
           "width": 768,
           "height": 3245,
+<<<<<<< HEAD
           "documentHeight": 3245,
           "scrollY": 0
+=======
+          "documentHeight": 3245
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "mobile": {
           "width": 390,
           "height": 3540,
+<<<<<<< HEAD
           "documentHeight": 3540,
           "scrollY": 0
+=======
+          "documentHeight": 3540
+        }
+      },
+      "warnings": []
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "source": "index.html",
+      "title": "Sunil Kumar, Advocate | Delhi High Court & District Courts",
+      "desktop": [
+        "001.png"
+      ],
+      "tablet": [
+        "001.png"
+      ],
+      "mobile": [
+        "001.png"
+      ],
+      "dimensions": {
+        "desktop": {
+          "width": 1440,
+          "height": 2595,
+          "documentHeight": 2595
+        },
+        "tablet": {
+          "width": 768,
+          "height": 3536,
+          "documentHeight": 3536
+        },
+        "mobile": {
+          "width": 390,
+          "height": 4843,
+          "documentHeight": 4843
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         }
       },
       "warnings": []
@@ -217,7 +324,10 @@
       "route": "/insights/",
       "source": "insights/index.html",
       "title": "",
+<<<<<<< HEAD
       "sourceBytes": 0,
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "desktop": [
         "001.png"
       ],
@@ -231,6 +341,7 @@
         "desktop": {
           "width": 1440,
           "height": 900,
+<<<<<<< HEAD
           "documentHeight": 900,
           "scrollY": 0
         },
@@ -249,6 +360,198 @@
       },
       "warnings": [
         "Source HTML is empty (0 bytes); captured the locally served blank page as-is."
+=======
+          "documentHeight": 900
+        },
+        "tablet": {
+          "width": 768,
+          "height": 1024,
+          "documentHeight": 1024
+        },
+        "mobile": {
+          "width": 390,
+          "height": 844,
+          "documentHeight": 844
+        }
+      },
+      "warnings": [
+        "Source HTML is empty (0 bytes); captured the served blank page as-is."
+      ]
+    },
+    {
+      "name": "practice-areas/arbitration",
+      "route": "/practice-areas/arbitration/",
+      "source": "practice-areas/arbitration/index.html",
+      "title": "",
+      "desktop": [
+        "001.png"
+      ],
+      "tablet": [
+        "001.png"
+      ],
+      "mobile": [
+        "001.png"
+      ],
+      "dimensions": {
+        "desktop": {
+          "width": 1440,
+          "height": 900,
+          "documentHeight": 900
+        },
+        "tablet": {
+          "width": 768,
+          "height": 1024,
+          "documentHeight": 1024
+        },
+        "mobile": {
+          "width": 390,
+          "height": 844,
+          "documentHeight": 844
+        }
+      },
+      "warnings": [
+        "Source HTML is empty (0 bytes); captured the served blank page as-is."
+      ]
+    },
+    {
+      "name": "practice-areas/banking-recovery",
+      "route": "/practice-areas/banking-recovery/",
+      "source": "practice-areas/banking-recovery/index.html",
+      "title": "",
+      "desktop": [
+        "001.png"
+      ],
+      "tablet": [
+        "001.png"
+      ],
+      "mobile": [
+        "001.png"
+      ],
+      "dimensions": {
+        "desktop": {
+          "width": 1440,
+          "height": 900,
+          "documentHeight": 900
+        },
+        "tablet": {
+          "width": 768,
+          "height": 1024,
+          "documentHeight": 1024
+        },
+        "mobile": {
+          "width": 390,
+          "height": 844,
+          "documentHeight": 844
+        }
+      },
+      "warnings": [
+        "Source HTML is empty (0 bytes); captured the served blank page as-is."
+      ]
+    },
+    {
+      "name": "practice-areas/civil-commercial",
+      "route": "/practice-areas/civil-commercial/",
+      "source": "practice-areas/civil-commercial/index.html",
+      "title": "",
+      "desktop": [
+        "001.png"
+      ],
+      "tablet": [
+        "001.png"
+      ],
+      "mobile": [
+        "001.png"
+      ],
+      "dimensions": {
+        "desktop": {
+          "width": 1440,
+          "height": 900,
+          "documentHeight": 900
+        },
+        "tablet": {
+          "width": 768,
+          "height": 1024,
+          "documentHeight": 1024
+        },
+        "mobile": {
+          "width": 390,
+          "height": 844,
+          "documentHeight": 844
+        }
+      },
+      "warnings": [
+        "Source HTML is empty (0 bytes); captured the served blank page as-is."
+      ]
+    },
+    {
+      "name": "practice-areas/criminal-ni-act",
+      "route": "/practice-areas/criminal-ni-act/",
+      "source": "practice-areas/criminal-ni-act/index.html",
+      "title": "",
+      "desktop": [
+        "001.png"
+      ],
+      "tablet": [
+        "001.png"
+      ],
+      "mobile": [
+        "001.png"
+      ],
+      "dimensions": {
+        "desktop": {
+          "width": 1440,
+          "height": 900,
+          "documentHeight": 900
+        },
+        "tablet": {
+          "width": 768,
+          "height": 1024,
+          "documentHeight": 1024
+        },
+        "mobile": {
+          "width": 390,
+          "height": 844,
+          "documentHeight": 844
+        }
+      },
+      "warnings": [
+        "Source HTML is empty (0 bytes); captured the served blank page as-is."
+      ]
+    },
+    {
+      "name": "practice-areas/high-court-writ",
+      "route": "/practice-areas/high-court-writ/",
+      "source": "practice-areas/high-court-writ/index.html",
+      "title": "",
+      "desktop": [
+        "001.png"
+      ],
+      "tablet": [
+        "001.png"
+      ],
+      "mobile": [
+        "001.png"
+      ],
+      "dimensions": {
+        "desktop": {
+          "width": 1440,
+          "height": 900,
+          "documentHeight": 900
+        },
+        "tablet": {
+          "width": 768,
+          "height": 1024,
+          "documentHeight": 1024
+        },
+        "mobile": {
+          "width": 390,
+          "height": 844,
+          "documentHeight": 844
+        }
+      },
+      "warnings": [
+        "Source HTML is empty (0 bytes); captured the served blank page as-is."
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       ]
     },
     {
@@ -256,7 +559,10 @@
       "route": "/practice-areas/",
       "source": "practice-areas/index.html",
       "title": "Practice Areas | Sunil Kumar, Advocate | page-specific-data-here",
+<<<<<<< HEAD
       "sourceBytes": 44822,
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "desktop": [
         "001.png"
       ],
@@ -270,25 +576,38 @@
         "desktop": {
           "width": 1440,
           "height": 2150,
+<<<<<<< HEAD
           "documentHeight": 2150,
           "scrollY": 0
+=======
+          "documentHeight": 2150
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "tablet": {
           "width": 768,
           "height": 3036,
+<<<<<<< HEAD
           "documentHeight": 3036,
           "scrollY": 0
+=======
+          "documentHeight": 3036
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "mobile": {
           "width": 390,
           "height": 3077,
+<<<<<<< HEAD
           "documentHeight": 3077,
           "scrollY": 0
+=======
+          "documentHeight": 3077
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         }
       },
       "warnings": []
     },
     {
+<<<<<<< HEAD
       "name": "practice-areas/arbitration",
       "route": "/practice-areas/arbitration/",
       "source": "practice-areas/arbitration/index.html",
@@ -484,11 +803,16 @@
       ]
     },
     {
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "name": "practice-areas/legal-drafting-advisory",
       "route": "/practice-areas/legal-drafting-advisory/",
       "source": "practice-areas/legal-drafting-advisory/index.html",
       "title": "",
+<<<<<<< HEAD
       "sourceBytes": 0,
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "desktop": [
         "001.png"
       ],
@@ -502,6 +826,7 @@
         "desktop": {
           "width": 1440,
           "height": 900,
+<<<<<<< HEAD
           "documentHeight": 900,
           "scrollY": 0
         },
@@ -520,6 +845,23 @@
       },
       "warnings": [
         "Source HTML is empty (0 bytes); captured the locally served blank page as-is."
+=======
+          "documentHeight": 900
+        },
+        "tablet": {
+          "width": 768,
+          "height": 1024,
+          "documentHeight": 1024
+        },
+        "mobile": {
+          "width": 390,
+          "height": 844,
+          "documentHeight": 844
+        }
+      },
+      "warnings": [
+        "Source HTML is empty (0 bytes); captured the served blank page as-is."
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       ]
     },
     {
@@ -527,7 +869,10 @@
       "route": "/practice-areas/property/",
       "source": "practice-areas/property/index.html",
       "title": "",
+<<<<<<< HEAD
       "sourceBytes": 0,
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "desktop": [
         "001.png"
       ],
@@ -541,6 +886,7 @@
         "desktop": {
           "width": 1440,
           "height": 900,
+<<<<<<< HEAD
           "documentHeight": 900,
           "scrollY": 0
         },
@@ -559,6 +905,23 @@
       },
       "warnings": [
         "Source HTML is empty (0 bytes); captured the locally served blank page as-is."
+=======
+          "documentHeight": 900
+        },
+        "tablet": {
+          "width": 768,
+          "height": 1024,
+          "documentHeight": 1024
+        },
+        "mobile": {
+          "width": 390,
+          "height": 844,
+          "documentHeight": 844
+        }
+      },
+      "warnings": [
+        "Source HTML is empty (0 bytes); captured the served blank page as-is."
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       ]
     },
     {
@@ -566,7 +929,10 @@
       "route": "/privacy-policy/",
       "source": "privacy-policy/index.html",
       "title": "Privacy Policy | Adv. Sunil Kumar",
+<<<<<<< HEAD
       "sourceBytes": 39359,
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "desktop": [
         "001.png"
       ],
@@ -580,20 +946,32 @@
         "desktop": {
           "width": 1440,
           "height": 4230,
+<<<<<<< HEAD
           "documentHeight": 4230,
           "scrollY": 0
+=======
+          "documentHeight": 4230
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "tablet": {
           "width": 768,
           "height": 4685,
+<<<<<<< HEAD
           "documentHeight": 4685,
           "scrollY": 0
+=======
+          "documentHeight": 4685
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "mobile": {
           "width": 390,
           "height": 4779,
+<<<<<<< HEAD
           "documentHeight": 4779,
           "scrollY": 0
+=======
+          "documentHeight": 4779
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         }
       },
       "warnings": []
@@ -603,7 +981,10 @@
       "route": "/standerd.html",
       "source": "standerd.html",
       "title": "Terms of Use | Adv. Sunil Kumar | page-specific-data-here",
+<<<<<<< HEAD
       "sourceBytes": 16340,
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "desktop": [
         "001.png"
       ],
@@ -617,20 +998,32 @@
         "desktop": {
           "width": 1440,
           "height": 900,
+<<<<<<< HEAD
           "documentHeight": 900,
           "scrollY": 0
+=======
+          "documentHeight": 900
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "tablet": {
           "width": 768,
           "height": 1024,
+<<<<<<< HEAD
           "documentHeight": 1024,
           "scrollY": 0
+=======
+          "documentHeight": 1024
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "mobile": {
           "width": 390,
           "height": 873,
+<<<<<<< HEAD
           "documentHeight": 873,
           "scrollY": 0
+=======
+          "documentHeight": 873
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         }
       },
       "warnings": []
@@ -640,7 +1033,10 @@
       "route": "/terms-of-use/",
       "source": "terms-of-use/index.html",
       "title": "Terms of Use | Adv. Sunil Kumar",
+<<<<<<< HEAD
       "sourceBytes": 45477,
+=======
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
       "desktop": [
         "001.png"
       ],
@@ -654,25 +1050,38 @@
         "desktop": {
           "width": 1440,
           "height": 5203,
+<<<<<<< HEAD
           "documentHeight": 5203,
           "scrollY": 0
+=======
+          "documentHeight": 5203
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "tablet": {
           "width": 768,
           "height": 5875,
+<<<<<<< HEAD
           "documentHeight": 5875,
           "scrollY": 0
+=======
+          "documentHeight": 5875
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         },
         "mobile": {
           "width": 390,
           "height": 5950,
+<<<<<<< HEAD
           "documentHeight": 5950,
           "scrollY": 0
+=======
+          "documentHeight": 5950
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
         }
       },
       "warnings": []
     }
   ],
+<<<<<<< HEAD
   "failedViewports": [],
   "unresolvedLinkedRoutes": [
     {
@@ -807,4 +1216,172 @@
     "sitemapHasRoutes": false,
     "linkedPageTargetsChecked": 41
   }
+=======
+  "failures": [],
+  "captureWarnings": [
+    {
+      "route": "/contact/",
+      "viewport": "desktop",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/contact/",
+      "viewport": "tablet",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/contact/",
+      "viewport": "mobile",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/insights/",
+      "viewport": "desktop",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/insights/",
+      "viewport": "tablet",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/insights/",
+      "viewport": "mobile",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/arbitration/",
+      "viewport": "desktop",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/arbitration/",
+      "viewport": "tablet",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/arbitration/",
+      "viewport": "mobile",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/banking-recovery/",
+      "viewport": "desktop",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/banking-recovery/",
+      "viewport": "tablet",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/banking-recovery/",
+      "viewport": "mobile",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/civil-commercial/",
+      "viewport": "desktop",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/civil-commercial/",
+      "viewport": "tablet",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/civil-commercial/",
+      "viewport": "mobile",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/criminal-ni-act/",
+      "viewport": "desktop",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/criminal-ni-act/",
+      "viewport": "tablet",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/criminal-ni-act/",
+      "viewport": "mobile",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/high-court-writ/",
+      "viewport": "desktop",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/high-court-writ/",
+      "viewport": "tablet",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/high-court-writ/",
+      "viewport": "mobile",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/legal-drafting-advisory/",
+      "viewport": "desktop",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/legal-drafting-advisory/",
+      "viewport": "tablet",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/legal-drafting-advisory/",
+      "viewport": "mobile",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/property/",
+      "viewport": "desktop",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/property/",
+      "viewport": "tablet",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    },
+    {
+      "route": "/practice-areas/property/",
+      "viewport": "mobile",
+      "warning": "Source HTML is empty (0 bytes); captured the served blank page as-is."
+    }
+  ],
+  "unavailableLinkedRoutes": [
+    "/courts/dwarka/",
+    "/courts/karkardooma/",
+    "/courts/patiala-house/",
+    "/courts/rohini/",
+    "/courts/saket/",
+    "/courts/tis-hazari/",
+    "/featured/article-commercial-dispute-resolution/",
+    "/featured/banking-recovery-proceedings/",
+    "/featured/delhi-high-court-banking-dispute/",
+    "/featured/important-recovery-matter/",
+    "/featured/pradeep-bhardwaj-v-priya/",
+    "/featured/property-disputes-delhi/",
+    "/featured/ramneesh-pal-singh-v-sugandhi-aggarwal/",
+    "/featured/shahjahan-v-state-of-uttar-pradesh/",
+    "/featured/shivangi-bansal-v-sahib-bansal/",
+    "/featured/sonal-talpada-v-veerbhan-singh/",
+    "/featured/sugirtha-v-gowtham/",
+    "/featured/understanding-ni-act-prosecutions/",
+    "/insights/child-custody-welfare-of-child/",
+    "/insights/cruelty-under-bns/",
+    "/insights/irretrievable-breakdown-of-marriage/",
+    "/insights/maintenance-under-bnss/",
+    "/insights/matrimonial-disputes-specific-allegations/",
+    "/insights/visitation-rights-during-divorce/",
+    "/term-of-use/"
+  ],
+  "sitemapStatus": "empty file"
+>>>>>>> 231d8758f43a4002dbd39b065210acf2272990b3
 }
