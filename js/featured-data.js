@@ -98,7 +98,7 @@ const featuredMattersData = [
     categoryLabel: "Significant Matter",
     date: "2024-03-05",
     formattedDate: "05 Mar 2024",
-    url: "/practice-areas/civil-commercial/",
+    url: "/featured/mandatory-pre-institution-mediation-commercial-disputes/",
     image: "/assets/images/featured/contract.png",
     imageAlt: "Commercial dispute negotiation and mediation",
     excerpt: "Review of Section 12A of the Commercial Courts Act 2015, exceptions for urgent interim relief, and strict compliance mandates established by the Supreme Court."
@@ -110,7 +110,7 @@ const featuredMattersData = [
     categoryLabel: "Significant Matter",
     date: "2024-01-29",
     formattedDate: "29 Jan 2024",
-    url: "/featured/understanding-ni-act-prosecutions/",
+    url: "/featured/directors-liability-section-141-ni-act/",
     image: "/assets/images/featured/legal.png",
     imageAlt: "Negotiable instruments and corporate governance",
     excerpt: "Examining statutory requirements for specific averments establishing day-to-day managerial responsibility to sustain cheque bounce prosecutions against directors."
@@ -122,7 +122,7 @@ const featuredMattersData = [
     categoryLabel: "Significant Matter",
     date: "2023-12-12",
     formattedDate: "12 Dec 2023",
-    url: "/practice-areas/property/",
+    url: "/featured/specific-performance-and-injunction-jurisprudence/",
     image: "/assets/images/property.png",
     imageAlt: "Property agreements and judicial decree",
     excerpt: "Analysis of post-2018 Specific Relief Act amendments making specific performance a mandatory statutory remedy rather than a discretionary equitable relief."
@@ -134,7 +134,7 @@ const featuredMattersData = [
     categoryLabel: "Significant Matter",
     date: "2023-10-30",
     formattedDate: "30 Oct 2023",
-    url: "/practice-areas/banking-recovery/",
+    url: "/featured/statutory-limitation-and-procedural-appeals-drt/",
     image: "/assets/images/banking.png",
     imageAlt: "Debt recovery appellate procedures",
     excerpt: "Navigating the strict 45-day limitation period under Section 17 of SARFAESI and pre-deposit mandates under Section 18 for Debts Recovery Appellate Tribunal appeals."
@@ -146,7 +146,7 @@ const featuredMattersData = [
     categoryLabel: "Significant Matter",
     date: "2023-08-16",
     formattedDate: "16 Aug 2023",
-    url: "/practice-areas/high-court-writ/",
+    url: "/featured/article-227-supervisory-jurisdiction-arbitral-orders/",
     image: "/assets/images/delhi-high-court.png",
     imageAlt: "Delhi High Court writ supervisory jurisdiction",
     excerpt: "High Court thresholds limiting writ intervention under Article 227 against procedural orders of arbitral tribunals to exceptional instances of patent lack of jurisdiction."
@@ -172,7 +172,7 @@ const featuredMattersData = [
     categoryLabel: "Publication",
     date: "2024-01-10",
     formattedDate: "10 Jan 2024",
-    url: "/practice-areas/civil-commercial/",
+    url: "/featured/contemporary-strategies-commercial-dispute-resolution/",
     image: "/assets/images/featured/contract.png",
     imageAlt: "Commercial contracts and dispute management",
     excerpt: "An overview of evolving dispute management strategies combining early case evaluation, structured mediation, and expedited commercial court litigation."
@@ -184,7 +184,7 @@ const featuredMattersData = [
     categoryLabel: "Publication",
     date: "2023-11-05",
     formattedDate: "05 Nov 2023",
-    url: "/practice-areas/property/",
+    url: "/featured/title-verification-due-diligence-delhi-real-estate/",
     image: "/assets/images/property.png",
     imageAlt: "Real estate title search and land records",
     excerpt: "Essential legal checks covering 30-year encumbrance certificates, sub-registrar record searches, mutation verification, and local zonal master plan clearances."
@@ -196,7 +196,7 @@ const featuredMattersData = [
     categoryLabel: "Publication",
     date: "2023-09-25",
     formattedDate: "25 Sep 2023",
-    url: "/practice-areas/arbitration/",
+    url: "/featured/pre-arbitral-relief-section-9-arbitration/",
     image: "/assets/images/justice-law-rights-remedy-trust.png",
     imageAlt: "Arbitration statute and legal text",
     excerpt: "Examining judicial standards for prima facie merit, balance of convenience, and imminent threat required to obtain asset-freezing orders before arbitration starts."
@@ -208,7 +208,7 @@ const featuredMattersData = [
     categoryLabel: "Publication",
     date: "2023-08-08",
     formattedDate: "08 Aug 2023",
-    url: "/insights/maintenance-under-bnss/",
+    url: "/featured/maintenance-framework-bharatiya-nagarik-suraksha-sanhita/",
     image: "/assets/images/courts/court_front.png",
     imageAlt: "Statutory maintenance under new criminal procedure",
     excerpt: "Comparative analysis of maintenance provisions under Section 144 BNSS (former Section 125 CrPC) and mandatory disclosure of assets and liabilities affidavits."
@@ -220,7 +220,7 @@ const featuredMattersData = [
     categoryLabel: "Publication",
     date: "2023-06-18",
     formattedDate: "18 Jun 2023",
-    url: "/practice-areas/legal-drafting-advisory/",
+    url: "/featured/drafting-effective-commercial-arbitration-clauses/",
     image: "/assets/images/featured/contract.png",
     imageAlt: "Legal drafting and contract clauses",
     excerpt: "Best practices in defining seat versus venue, governing substantive law, institutional rules, multi-tiered escalation mechanisms, and arbitrator qualifications."
@@ -234,7 +234,7 @@ const featuredMattersData = [
     categoryLabel: "Speaking & Recognition",
     date: "2024-03-22",
     formattedDate: "22 Mar 2024",
-    url: "/practice-areas/criminal-ni-act/",
+    url: "/featured/procedural-safeguards-criminal-defence-bail/",
     image: "/assets/images/courts/court_front.png",
     imageAlt: "Criminal trial procedure and fundamental rights",
     excerpt: "Insights on arrest compliance under Arnesh Kumar guidelines, statutory remand procedures, and anticipatory bail jurisprudence across Delhi trial courts."
@@ -246,7 +246,7 @@ const featuredMattersData = [
     categoryLabel: "Speaking & Recognition",
     date: "2024-02-02",
     formattedDate: "02 Feb 2024",
-    url: "/practice-areas/civil-commercial/",
+    url: "/featured/practical-approaches-consumer-protection-act-2019/",
     image: "/assets/images/featured/contract.png",
     imageAlt: "Consumer rights and tribunal advocacy",
     excerpt: "Discussion of pecuniary thresholds, e-filing provisions, mediation cells at District Commissions, and liability for unfair contracts and defective services."
@@ -258,7 +258,7 @@ const featuredMattersData = [
     categoryLabel: "Speaking & Recognition",
     date: "2023-11-19",
     formattedDate: "19 Nov 2023",
-    url: "/practice-areas/civil-commercial/",
+    url: "/featured/witness-examination-techniques-commercial-trials/",
     image: "/assets/images/featured/legal.png",
     imageAlt: "Evidence law and trial examination",
     excerpt: "Practical perspective on drafting examination-in-chief affidavits, cross-examination on electronic records under Section 65B, and document admission procedures."
@@ -270,7 +270,7 @@ const featuredMattersData = [
     categoryLabel: "Speaking & Recognition",
     date: "2023-10-15",
     formattedDate: "15 Oct 2023",
-    url: "/practice-areas/property/",
+    url: "/featured/tenancy-disputes-delhi-rent-control-grounds/",
     image: "/assets/images/property.png",
     imageAlt: "Property rent control and commercial tenancy",
     excerpt: "Key legal considerations in bonafide commercial requirement petitions under Section 14(1)(e) and leave-to-defend standards before Additional Rent Controllers."
@@ -282,7 +282,7 @@ const featuredMattersData = [
     categoryLabel: "Speaking & Recognition",
     date: "2023-07-09",
     formattedDate: "09 Jul 2023",
-    url: "/practice-areas/high-court-writ/",
+    url: "/featured/natural-justice-principles-administrative-tribunals/",
     image: "/assets/images/delhi-high-court.png",
     imageAlt: "Administrative law and tribunal justice",
     excerpt: "Analysis of reasoned speaking orders, procedural fairness, and statutory remedies when administrative authorities pass orders without granting personal hearings."
@@ -294,10 +294,180 @@ const featuredMattersData = [
     categoryLabel: "Speaking & Recognition",
     date: "2023-05-12",
     formattedDate: "12 May 2023",
-    url: "/practice-areas/arbitration/",
+    url: "/featured/enforcement-domestic-arbitral-awards-delhi-high-court/",
     image: "/assets/images/justice-law-rights-remedy-trust.png",
     imageAlt: "Arbitral decree execution and attachment",
     excerpt: "Procedural framework for executing arbitral awards as civil court decrees under Section 36 and navigating post-amendment unconditional stay rules."
+  },
+
+  // --- Appended Family & Matrimonial Highlights (14 items) ---
+  {
+    id: "shilpa-sailesh-sc",
+    title: "Shilpa Sailesh v. Varun Sreenivasan",
+    category: "reported-judgments",
+    categoryLabel: "Reported Judgment",
+    date: "2023-05-01",
+    formattedDate: "01 May 2023",
+    url: "/featured/shilpa-sailesh-v-varun-sreenivasan/",
+    image: "/assets/images/courts/court_front.png",
+    imageAlt: "Supreme Court Constitution Bench judgment review",
+    excerpt: "Constitution Bench landmark ruling affirming Supreme Court powers under Article 142 to dissolve irretrievably broken marriages without statutory delays."
+  },
+  {
+    id: "satish-chander-ahuja-sc",
+    title: "Satish Chander Ahuja v. Sneha Ahuja",
+    category: "reported-judgments",
+    categoryLabel: "Reported Judgment",
+    date: "2023-10-12",
+    formattedDate: "12 Oct 2023",
+    url: "/featured/satish-chander-ahuja-v-sneha-ahuja/",
+    image: "/assets/images/featured/legal.png",
+    imageAlt: "Shared household and residence rights under Domestic Violence Act",
+    excerpt: "Supreme Court benchmark judgment establishing a daughter-in-law's statutory right to reside in a shared household under the Protection of Women from Domestic Violence Act."
+  },
+  {
+    id: "roxann-sharma-sc",
+    title: "Roxann Sharma v. Arun Sharma",
+    category: "reported-judgments",
+    categoryLabel: "Reported Judgment",
+    date: "2023-06-20",
+    formattedDate: "20 Jun 2023",
+    url: "/featured/roxann-sharma-v-arun-sharma/",
+    image: "/assets/images/featured/contract.png",
+    imageAlt: "Child custody and guardianship principles",
+    excerpt: "Authoritative Supreme Court ruling applying Section 6(a) of the Hindu Minority and Guardianship Act regarding custody of infants under five years."
+  },
+  {
+    id: "yashita-sahu-sc",
+    title: "Yashita Sahu v. State of Rajasthan",
+    category: "reported-judgments",
+    categoryLabel: "Reported Judgment",
+    date: "2023-04-18",
+    formattedDate: "18 Apr 2023",
+    url: "/featured/yashita-sahu-v-state-of-rajasthan/",
+    image: "/assets/images/courts/court_front.png",
+    imageAlt: "Child visitation rights and contact orders",
+    excerpt: "Supreme Court precedent establishing modern contact rights—including structured physical access and electronic/video visitation—to safeguard child bonding."
+  },
+  {
+    id: "aditi-jitesh-sharma-sc",
+    title: "Aditi alias Mithi v. Jitesh Sharma",
+    category: "reported-judgments",
+    categoryLabel: "Reported Judgment",
+    date: "2023-11-06",
+    formattedDate: "06 Nov 2023",
+    url: "/featured/aditi-alias-mithi-v-jitesh-sharma/",
+    image: "/assets/images/featured/legal.png",
+    imageAlt: "Child maintenance enforcement and asset disclosure",
+    excerpt: "Supreme Court directive mandating strict nationwide trial court adherence to mandatory asset disclosure affidavits in child maintenance proceedings."
+  },
+  {
+    id: "delhi-hc-498a-quashing",
+    title: "Scrutiny of Omnibus Allegations in Matrimonial Criminal Complaints",
+    category: "significant-matters",
+    categoryLabel: "Significant Matter",
+    date: "2024-02-24",
+    formattedDate: "24 Feb 2024",
+    url: "/featured/scrutiny-omnibus-allegations-matrimonial-criminal-complaints/",
+    image: "/assets/images/delhi-high-court.png",
+    imageAlt: "Delhi High Court criminal quashing proceedings",
+    excerpt: "Judicial thresholds applied under Section 482 CrPC / Section 528 BNSS by Delhi High Court to quash vague criminal allegations against distant matrimonial relatives."
+  },
+  {
+    id: "family-court-interim-custody",
+    title: "Interim Custody & Holiday Access Schedules in Delhi Family Courts",
+    category: "significant-matters",
+    categoryLabel: "Significant Matter",
+    date: "2024-01-15",
+    formattedDate: "15 Jan 2024",
+    url: "/featured/interim-custody-holiday-access-schedules-delhi-courts/",
+    image: "/assets/images/featured/contract.png",
+    imageAlt: "Family court interim custody orders",
+    excerpt: "Procedural framework under Section 12 of the Guardians and Wards Act governing school vacations, weekend overnight access, and festival visitation arrangements."
+  },
+  {
+    id: "stridhan-recovery-procedure",
+    title: "Evidentiary Burdens in Stridhan Recovery and Section 406 Claims",
+    category: "significant-matters",
+    categoryLabel: "Significant Matter",
+    date: "2023-12-08",
+    formattedDate: "08 Dec 2023",
+    url: "/featured/evidentiary-burdens-stridhan-recovery-section-406/",
+    image: "/assets/images/featured/legal.png",
+    imageAlt: "Stridhan recovery legal documentation",
+    excerpt: "Practical application of the Pratibha Rani doctrine distinguishing personal Stridhan property from joint matrimonial possessions in criminal breach of trust claims."
+  },
+  {
+    id: "mutual-consent-waiver-delhi",
+    title: "Waiver of Six-Month Cooling-Off Period under Section 13B(2)",
+    category: "significant-matters",
+    categoryLabel: "Significant Matter",
+    date: "2023-10-22",
+    formattedDate: "22 Oct 2023",
+    url: "/featured/waiver-cooling-off-period-section-13b-hma/",
+    image: "/assets/images/courts/court_front.png",
+    imageAlt: "Mutual consent divorce waiver proceedings",
+    excerpt: "Analysis of Delhi Family Court discretion in applying Amardeep Singh standards to waive the statutory cooling-off window where comprehensive settlements are recorded."
+  },
+  {
+    id: "maintenance-execution-framework",
+    title: "Enforcement and Execution of Maintenance Decrees Across Forums",
+    category: "publications",
+    categoryLabel: "Publication",
+    date: "2024-03-02",
+    formattedDate: "02 Mar 2024",
+    url: "/featured/enforcement-execution-maintenance-decrees-across-forums/",
+    image: "/assets/images/featured/legal.png",
+    imageAlt: "Maintenance decree execution guide",
+    excerpt: "Step-by-step procedural analysis of execution under Section 125(3) CrPC / Section 144(3) BNSS, salary attachment, property distress warrants, and limitation bars."
+  },
+  {
+    id: "section-19-hma-jurisdiction",
+    title: "Territorial Jurisdiction in Matrimonial Litigation under Section 19 HMA",
+    category: "publications",
+    categoryLabel: "Publication",
+    date: "2024-01-20",
+    formattedDate: "20 Jan 2024",
+    url: "/featured/territorial-jurisdiction-matrimonial-litigation-section-19-hma/",
+    image: "/assets/images/courts/court_front.png",
+    imageAlt: "Matrimonial jurisdiction legal publication",
+    excerpt: "Examining jurisdictional options across Delhi courts: place of marriage solemnization, last cohabitation, and wife's current ordinary place of residence."
+  },
+  {
+    id: "shared-parenting-delhi-courts",
+    title: "Evolving Trends in Shared Parenting and Joint Guardianship in India",
+    category: "publications",
+    categoryLabel: "Publication",
+    date: "2023-11-18",
+    formattedDate: "18 Nov 2023",
+    url: "/featured/shared-parenting-joint-guardianship-trends-india/",
+    image: "/assets/images/featured/contract.png",
+    imageAlt: "Shared parenting legal analysis",
+    excerpt: "Review of Law Commission Report 257 recommendations and judicial adoption of shared parenting plans in high-conflict custody litigation."
+  },
+  {
+    id: "matrimonial-mediation-framework",
+    title: "Role of Court-Annexed Mediation in Resolving Matrimonial Disputes",
+    category: "speaking-recognition",
+    categoryLabel: "Speaking & Recognition",
+    date: "2024-02-15",
+    formattedDate: "15 Feb 2024",
+    url: "/featured/role-court-annexed-mediation-matrimonial-disputes/",
+    image: "/assets/images/courts/court_front.png",
+    imageAlt: "Matrimonial mediation conference",
+    excerpt: "Perspective on mandatory conciliation under Section 9 Family Courts Act, confidentiality of mediation proceedings, and drafting enforceable settlement agreements."
+  },
+  {
+    id: "parental-alienation-safeguards",
+    title: "Identifying and Addressing Parental Alienation in Custody Battles",
+    category: "speaking-recognition",
+    categoryLabel: "Speaking & Recognition",
+    date: "2023-09-30",
+    formattedDate: "30 Sep 2023",
+    url: "/featured/identifying-addressing-parental-alienation-custody-battles/",
+    image: "/assets/images/featured/legal.png",
+    imageAlt: "Child welfare and parental alienation safeguards",
+    excerpt: "Discussion on psychological evaluation protocols, child counsellor involvement, and judicial interventions to counter parental alienation in contested divorce."
   }
 ];
 

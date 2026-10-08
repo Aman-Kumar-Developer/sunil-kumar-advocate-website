@@ -448,6 +448,188 @@ const legalInsightsData = [
     imageAlt: "Tribunal courthouse representing MACT compensation hearings",
     excerpt: "Analyzing the multiplier method, future prospects additions, and third-party insurer liability under the Motor Vehicles Act.",
     expandedText: "<p>Claims for death or bodily injury arising from vehicular accidents are adjudicated by the Motor Accident Claims Tribunal (MACT) under the Motor Vehicles Act. The governing principle is the award of 'just compensation' founded on the multiplier method established in Sarla Verma and National Insurance Co. v. Pranay Sethi.</p><p>Compensation in fatal accident claims includes loss of dependency, funeral expenses, loss of estate, and loss of spousal or parental consortium. For self-employed or fixed-salary victims, courts mandate addition of 10% to 50% towards 'future prospects' based on the victim's age at the time of the accident.</p><p>Strict proof of income and medical disability certificates from designated medical boards are vital to maximizing lawful compensation.</p>"
+  },
+
+  // --- Appended Family & Matrimonial Insights (15 items) ---
+  {
+    id: "insight-shilpa-sailesh-breakdown",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2024-03-24",
+    formattedDate: "24 Mar 2024",
+    title: "Irretrievable Breakdown of Marriage: Article 142 Powers Explained",
+    image: "/assets/images/court_front.png",
+    imageAlt: "Supreme Court Article 142 marriage dissolution",
+    excerpt: "Analysis of the Constitution Bench ruling in Shilpa Sailesh, key factors determining irretrievable breakdown, and limitations on lower courts.",
+    expandedText: "<p>In the landmark Constitution Bench judgment of Shilpa Sailesh v. Varun Sreenivasan (2023), the Supreme Court affirmed its discretionary power under Article 142 to dissolve marriages that have irretrievably broken down, even in the absence of mutual consent. The Court underscored that Article 142 allows it to do 'complete justice' by terminating marriages that exist merely in legal fiction.</p><p>Key considerations articulated by the Bench include the period of continuous separation (ordinarily six years or longer), the futility of mediation attempts, the nature of pending litigation between spouses, and the resolution of financial provisions such as permanent alimony and child maintenance.</p><p>Crucially, this extraordinary jurisdiction belongs exclusively to the Supreme Court; Family Courts and High Courts remain bound by the fault-based grounds specified under Section 13 of the Hindu Marriage Act.</p>"
+  },
+  {
+    id: "insight-shared-household-dv",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2024-03-16",
+    formattedDate: "16 Mar 2024",
+    title: "Right of Residence in a Shared Household under the Domestic Violence Act",
+    image: "/assets/images/property.png",
+    imageAlt: "Shared household residence rights under DV Act",
+    excerpt: "How Satish Chander Ahuja and Prabha Tyagi expanded residence protection for wives even in properties solely owned by in-laws.",
+    expandedText: "<p>Sections 17 and 19 of the Protection of Women from Domestic Violence Act, 2005 (DV Act) guarantee every woman in a domestic relationship the right to reside in the shared household. In Satish Chander Ahuja v. Sneha Ahuja (2020), the Supreme Court overruled earlier restrictive interpretations, holding that a shared household includes premises where the aggrieved person lived in a domestic relationship with some degree of permanency, regardless of whether the property is owned exclusively by the father-in-law or joint family.</p><p>This principle was further strengthened in Prabha Tyagi v. Kamlesh Devi (2022), affirming that a woman cannot be evicted except through due process of law. While civil courts may consider evictions under Senior Citizens legislation, they must balance competing rights and ensure alternative suitable accommodation or rent compensation is secured.</p><p>Meticulous documentation of cohabitation and household arrangements is paramount in residence order applications.</p>"
+  },
+  {
+    id: "insight-overlapping-maintenance-rajnesh",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2024-03-04",
+    formattedDate: "04 Mar 2024",
+    title: "Overlapping Maintenance Claims: The Harmonization Rules in Rajnesh v. Neha",
+    image: "/assets/images/featured/legal.png",
+    imageAlt: "Overlapping maintenance claims and adjustment",
+    excerpt: "Rules governing simultaneous maintenance claims under HMA Section 24, DV Act Section 20, and CrPC 125 / BNSS 144.",
+    expandedText: "<p>In matrimonial litigation, an applicant often seeks interim maintenance under multiple statutes: Section 24 of the Hindu Marriage Act, Section 125 CrPC / Section 144 BNSS, and Section 20 of the DV Act. The Supreme Court in Rajnesh v. Neha (2020) resolved statutory friction by establishing comprehensive rules of adjustment and set-off.</p><p>While maintainability under parallel statutes is preserved, the Court mandated that an applicant must candidly disclose all prior maintenance proceedings, orders passed, and sums received. When awarding maintenance in subsequent proceedings, judges must take into account payments already made under previous orders and direct adjustment accordingly to prevent unjust duplication.</p><p>Transparent financial disclosure affidavits are mandatory for both spouses across all forums from the very inception of the claim.</p>"
+  },
+  {
+    id: "insight-infant-custody-roxann-sharma",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2024-02-22",
+    formattedDate: "22 Feb 2024",
+    title: "Custody of Children Below Five Years: The Maternal Preference Principle",
+    image: "/assets/images/courts/court_front.png",
+    imageAlt: "Child custody maternal preference under Section 6 HMG Act",
+    excerpt: "Analyzing Section 6(a) of the Hindu Minority and Guardianship Act and exceptions established in Roxann Sharma v. Arun Sharma.",
+    expandedText: "<p>Under the statutory proviso to Section 6(a) of the Hindu Minority and Guardianship Act, 1956, custody of a minor who has not completed the age of five years shall ordinarily be with the mother. In Roxann Sharma v. Arun Sharma (2015), the Supreme Court emphasized that tender age requires intimate nurturing and daily physical care that the mother is naturally equipped to provide.</p><p>A father seeking to displace maternal custody of an infant bears a heavy evidentiary burden to prove that the mother's conduct or condition presents a direct, palpable hazard to the child's physical or emotional well-being. General allegations regarding personal lifestyle, employment demands, or contested marital accusations are insufficient to deprive an infant of maternal care.</p><p>Even when interim custody rests with the mother, courts mandate liberal access and visitation for the father to foster meaningful early bonding.</p>"
+  },
+  {
+    id: "insight-virtual-visitation-yashita-sahu",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2024-02-10",
+    formattedDate: "10 Feb 2024",
+    title: "Electronic Contact Rights & Virtual Visitation in Matrimonial Disputes",
+    image: "/assets/images/featured/contract.png",
+    imageAlt: "Virtual visitation and contact rights for non-custodial parent",
+    excerpt: "The Supreme Court's recognition of structured video calls, telephonic access, and contact rights in Yashita Sahu v. State of Rajasthan.",
+    expandedText: "<p>When estranged parents reside in different cities or jurisdictions, physical visitation alone cannot sustain parent-child connection. In Yashita Sahu v. State of Rajasthan (2020), the Supreme Court formally incorporated 'contact rights'—including structured telephonic communication, video conferencing, and email access—as an essential element of modern custody jurisprudence.</p><p>The Court observed that children of broken marriages are entitled to the love, guidance, and affection of both parents. Contact rights ensure that distance or ongoing marital litigation does not lead to alienation between the child and the non-custodial parent.</p><p>Family courts in Delhi regularly incorporate explicit electronic contact protocols, fixing specified daily or weekend video windows, uninterrupted privacy, and safeguards against parental interference.</p>"
+  },
+  {
+    id: "insight-stridhan-criminal-breach",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2024-01-28",
+    formattedDate: "28 Jan 2024",
+    title: "Stridhan Entrustment, Ownership and Recovery under Criminal Law",
+    image: "/assets/images/featured/legal.png",
+    imageAlt: "Stridhan jewellery and property legal rights",
+    excerpt: "Pratibha Rani v. Suraj Kumar doctrine: Why Stridhan remains absolute property of the woman and refusal to return constitutes criminal breach of trust.",
+    expandedText: "<p>Under Section 14 of the Hindu Succession Act, 1956, Stridhan—including gifts, jewellery, clothing, and assets presented to a woman before, during, or after marriage—is her absolute and exclusive property. In Pratibha Rani v. Suraj Kumar (1985), the Supreme Court established that entrusting Stridhan to a husband or in-laws creates a fiduciary relationship of custody, not ownership.</p><p>Should the husband or relatives refuse to return these articles upon demand, such conduct amounts to criminal breach of trust punishable under Section 406 IPC / Section 316 BNS. To establish a prima facie case, the complainant must provide specific inventories, proof of purchase or gift receipts, and formal demand notices establishing entrustment and refusal.</p><p>Conversely, broad, unsubstantiated allegations against distant in-laws without specific entrustment are vulnerable to quashing under inherent court powers.</p>"
+  },
+  {
+    id: "insight-jurisdiction-section-19-hma",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2024-01-14",
+    formattedDate: "14 Jan 2024",
+    title: "Where Can a Matrimonial Petition Be Filed? Understanding Section 19 HMA",
+    image: "/assets/images/court_front.png",
+    imageAlt: "Territorial jurisdiction in matrimonial petitions",
+    excerpt: "Exploring statutory territorial forums under the Hindu Marriage Act, with special focus on the wife's place of residence.",
+    expandedText: "<p>Section 19 of the Hindu Marriage Act governs territorial jurisdiction for presenting petitions for restitution, judicial separation, nullity, or divorce. A petition may be presented to the Family Court within whose jurisdiction the marriage was solemnized, where the respondent resides, or where the parties last resided together.</p><p>Significantly, the 2003 amendment introduced clause (iiia), providing that where the wife is the petitioner, the petition can also be filed where she is residing on the date of presentation. This statutory protection relieves women who relocate to their parental homes from the hardship of travelling long distances to contest matrimonial litigation.</p><p>Where competing petitions are filed in different states, the Supreme Court frequently exercises powers under Section 25 CPC to transfer proceedings to the court most accessible to the dependent spouse and minor child.</p>"
+  },
+  {
+    id: "insight-parental-alienation-syndrome",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2023-12-20",
+    formattedDate: "20 Dec 2023",
+    title: "Parental Alienation in Custody Disputes: Judicial Remedies and Safeguards",
+    image: "/assets/images/justice-law-rights-remedy-trust.png",
+    imageAlt: "Parental alienation safeguards in child custody",
+    excerpt: "How courts identify psychological manipulation of children by a custodial parent and modify custody orders to preserve bonding.",
+    expandedText: "<p>Parental alienation occurs when one parent systematically programs and denigrates the other parent in the mind of the child, instilling baseless fear and hostility. Indian courts recognize that parental alienation inflicts profound psychological harm on a developing child, conflicting directly with the paramount welfare principle.</p><p>When alienation is suspected, Family Courts in Delhi routinely engage court counsellors, child welfare committees, and qualified child psychologists to conduct independent evaluations. Where sustained alienation is demonstrated, courts do not hesitate to modify interim custody arrangements, order supervised reunification therapy, or award shared parenting to safeguard the child's natural affection for both parents.</p><p>Preserving contemporaneous correspondence and demonstrating proactive efforts to maintain contact are crucial in legal responses to parental alienation claims.</p>"
+  },
+  {
+    id: "insight-execution-maintenance-bnss",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2023-12-02",
+    formattedDate: "02 Dec 2023",
+    title: "Execution and Recovery of Maintenance Arrears: Timelines and Enforcement",
+    image: "/assets/images/featured/contract.png",
+    imageAlt: "Execution of maintenance order in family court",
+    excerpt: "Navigating the 1-year limitation bar for execution applications, salary attachment, and distress warrants under Section 144 BNSS.",
+    expandedText: "<p>Securing a maintenance order is often only the first hurdle; enforcing compliance against a recalcitrant spouse requires prompt procedural action under Section 125(3) CrPC / Section 144(3) BNSS. A crucial statutory limitation exists: execution applications for accumulated arrears must be filed within one year from the date each instalment fell due.</p><p>The Magistrate or Family Court possesses potent recovery powers, including the issuance of distress warrants for levying fines, attachment of employer salaries, freezing bank accounts, and sentencing the defaulting party to imprisonment for up to one month for each default. In Delhi, courts increasingly direct immediate salary deductions at source for salaried respondents to guarantee timely monthly sustenance.</p><p>Maintaining strict chronological accounting of payment defaults ensures execution petitions remain fully enforceable within statutory limitation windows.</p>"
+  },
+  {
+    id: "insight-interim-maintenance-aditi-mithi",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2023-11-12",
+    formattedDate: "12 Nov 2023",
+    title: "Child Maintenance Obligations: Assessing Parental Income and Capacity",
+    image: "/assets/images/courts/court_front.png",
+    imageAlt: "Child maintenance assessment and school expenditure",
+    excerpt: "Supreme Court principles affirming that both parents share maintenance burdens, but working mothers do not extinguish fathers' primary duty.",
+    expandedText: "<p>In Aditi alias Mithi v. Jitesh Sharma (2023), the Supreme Court reiterated that child maintenance determinations must be founded on a reasoned, transparent evaluation of financial disclosures rather than arbitrary reductions. Courts calculate child maintenance considering school tuition, extracurricular fees, healthcare, and standard of living commensurate with parental status.</p><p>Importantly, judicial precedents establish that a mother's independent income does not relieve the father of his legal and moral obligation to provide financial support for his minor child. While parental contributions may be apportioned where both parents are gainfully employed, an able-bodied father cannot evade maintenance by pleading voluntary unemployment, commercial downturns, or non-cooperation without robust documentary evidence.</p><p>Detailed itemization of educational and medical expenses strengthens interim maintenance prayers before Family Courts.</p>"
+  },
+  {
+    id: "insight-annulment-voidable-marriages",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2023-10-25",
+    formattedDate: "25 Oct 2023",
+    title: "Annulment vs. Divorce: Grounds for Declaring Marriage Void or Voidable",
+    image: "/assets/images/featured/legal.png",
+    imageAlt: "Annulment decree and voidable marriage provisions",
+    excerpt: "Distinguishing void marriages under Section 11 from voidable marriages under Section 12 of the Hindu Marriage Act.",
+    expandedText: "<p>While divorce dissolves a validly subsisting marriage, annulment declares that a marriage was void ab initio (Section 11) or voidable at the option of an aggrieved party (Section 12). Void marriages—such as bigamous unions or those within prohibited degrees of relationship—carry no legal validity from inception, though children born of such unions retain legitimate succession rights under Section 16.</p><p>Voidable marriages require a formal decree of nullity based on statutory grounds: incapacity to consummate the marriage, mental unsoundness precluding valid consent, consent obtained through fraud or coercion as to material nature or facts, or pre-marriage pregnancy by a third party. Petitions founded on fraud must be instituted within a strict limitation of one year from discovery of fraud, with no marital cohabitation post-discovery.</p><p>Choosing between an annulment petition and a dissolution petition depends on the timing of disclosure and specific evidentiary proof of initial defect.</p>"
+  },
+  {
+    id: "insight-joint-property-section-27-hma",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2023-10-04",
+    formattedDate: "04 Oct 2023",
+    title: "Disposal of Joint Matrimonial Property under Section 27 HMA",
+    image: "/assets/images/property.png",
+    imageAlt: "Joint matrimonial property disposal under Section 27",
+    excerpt: "How Family Courts exercise jurisdiction over property presented at or about the time of marriage belonging jointly to spouses.",
+    expandedText: "<p>Section 27 of the Hindu Marriage Act provides a specialized statutory mechanism enabling matrimonial courts, when passing a decree, to make just and equitable provisions regarding property presented at or about the time of marriage which may belong jointly to both husband and wife.</p><p>This provision avoids multiplicity of legal proceedings by allowing Family Courts to settle joint property issues alongside the matrimonial dispute itself. However, the jurisdiction under Section 27 is strictly confined to properties presented jointly at the time of marriage; properties acquired independently during the course of marriage require separate civil suits for partition or declaration.</p><p>Parties should maintain gift lists, wedding photographs, and joint registration documents to substantiate joint property claims under Section 27.</p>"
+  },
+  {
+    id: "insight-restitution-conjugal-rights-9",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2023-08-14",
+    formattedDate: "14 Aug 2023",
+    title: "Restitution of Conjugal Rights (Section 9 HMA): Purpose, Defense and Impact",
+    image: "/assets/images/featured/contract.png",
+    imageAlt: "Restitution of conjugal rights legal petition",
+    excerpt: "Understanding 'reasonable excuse' for withdrawal from society and how non-restitution leads to divorce under Section 13(1A)(ii).",
+    expandedText: "<p>Section 9 of the Hindu Marriage Act permits either spouse to seek restitution of conjugal rights where the other spouse has withdrawn from society without reasonable excuse. In Dharmendra Kumar v. Usha Kumar and subsequent decisions, the Supreme Court established that once withdrawal is proved, the burden shifts to the respondent to establish a 'reasonable excuse'—which includes proof of matrimonial cruelty, neglect, or demanding unlawful conduct.</p><p>A decree of restitution cannot be executed through physical cohabitation; it operates as an authoritative declaration of wrongful withdrawal. Significantly, if the parties do not resume cohabitation for a period of one year or more following a Section 9 decree, either party acquires a statutory ground to petition for divorce under Section 13(1A)(ii).</p><p>Strategic handling of Section 9 proceedings requires balancing reconciliation prospects with long-term dispute resolution pathways.</p>"
+  },
+  {
+    id: "insight-family-court-counselling-mediation",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2023-07-20",
+    formattedDate: "20 Jul 2023",
+    title: "Mandatory Reconciliation & Family Court Counselling Mechanisms",
+    image: "/assets/images/courts/court_front.png",
+    imageAlt: "Family court counselling chamber in Delhi",
+    excerpt: "Statutory mandates under Section 9 of the Family Courts Act 1984 directing judges and counsellors to endeavor for amicable reconciliation.",
+    expandedText: "<p>The Family Courts Act, 1984 was enacted to promote conciliation and speedy resolution of matrimonial disputes away from adversarial courtroom friction. Section 9 of the Act imposes an express statutory obligation on Family Court judges to endeavor, in the first instance, to assist and persuade parties in arriving at a settlement.</p><p>In Delhi District Courts (such as Karkardooma, Tis Hazari, Patiala House, Saket, Rohini, and Dwarka), matters are routinely referred to Principal Counsellors and court-annexed mediation centres (like Samadhan). Proceedings before counsellors are confidential and privileged; admissions made during settlement discussions cannot be used as adverse evidence in trial.</p><p>Comprehensive settlement agreements recording mutual consent, alimony, custody, and quashing of allied criminal complaints provide definitive legal closure.</p>"
+  },
+  {
+    id: "insight-interim-custody-visitation-protocols",
+    category: "general",
+    categoryLabel: "Family & Matrimonial",
+    date: "2023-06-16",
+    formattedDate: "16 Jun 2023",
+    title: "Structuring Interim Visitation Schedules: Practical Principles in Delhi Courts",
+    image: "/assets/images/justice-law-rights-remedy-trust.png",
+    imageAlt: "Interim child visitation protocols in Delhi family courts",
+    excerpt: "Practical criteria used by courts to design weekend visitation, children's complex meetings, festival sharing, and summer vacation access.",
+    expandedText: "<p>During pending matrimonial litigation, disputes over interim custody and access are among the most emotionally charged. Section 12 of the Guardians and Wards Act, 1890 empowers courts to make interlocutory orders for temporary custody and protection of the minor.</p><p>Delhi Family Courts have developed standardized, child-centric visitation models. For initial access or strained relations, meetings take place at the court's designated Children's Complex on alternate weekends. As the child's comfort develops, courts grant daytime unsupervised access, progressing to overnight weekend stays, equal division of summer and winter vacations, and alternating festive holidays.</p><p>Courts consistently emphasize that interim access is the right of the child to know both parents, rather than a mere concession to the non-custodial parent.</p>"
   }
 ];
 
