@@ -265,27 +265,28 @@
     <main id="main-content" class="featured-page">
 
         <!-- =========================================================
-             FEATURED PAGE HERO
+             HERO
         ========================================================== -->
 
-        <section class="hero featured-hero" aria-labelledby="featured-hero-title">
+        <section class="hero" aria-labelledby="hero-title">
 
             <div class="hero__inner">
 
+                <!-- Hero copy -->
                 <div class="hero__content">
 
                     <p class="eyebrow">
-                        <span>Featured Matters</span>
+                        FEATURED MATTERS
                         <span class="eyebrow__line" aria-hidden="true"></span>
                     </p>
 
-                    <h1 id="featured-hero-title" class="hero__title">
+                    <h1 id="hero-title" class="hero__title">
                         Select Matters &amp;<br>
                         Professional Highlights
                     </h1>
 
                     <p class="hero__tagline">
-                        Real cases. Meaningful impact.
+                        REAL CASES. MEANINGFUL IMPACT.
                     </p>
 
                     <p class="hero__description">
@@ -294,14 +295,51 @@
                         legal practice of Sunil Kumar, Advocate, in Delhi.
                     </p>
 
+                    <div class="hero__actions">
+
+                        <a href="/contact/" class="button button--primary">
+                            Discuss a Matter
+                            <span class="button__icon" aria-hidden="true">
+                                →
+                            </span>
+                        </a>
+
+                        <a href="#featured-filters-title" class="button button--outline">
+                            Browse Highlights
+                        </a>
+
+                    </div>
+
                 </div>
 
+                <!-- Hero visual -->
                 <div class="hero__visual">
 
-                    <!-- Replace with the final approved Featured-page hero image. -->
                     <img class="hero__image" src="/assets/images/featured-hero.png"
                         alt="Featured legal matters and professional highlights of Sunil Kumar, Advocate" width="1672"
                         height="941" loading="eager" fetchpriority="high" decoding="async">
+
+                    <aside class="hero-quote">
+
+                        <span class="hero-quote__mark" aria-hidden="true">
+                            “
+                        </span>
+
+                        <p class="hero-quote__text">
+                            Legal advocacy requires thorough preparation, steadfast principle, and delivering practical results.
+                        </p>
+
+                        <p class="hero-quote__author">
+                            — Sunil Kumar Upadhyay
+                        </p>
+
+                    </aside>
+
+                    <div class="hero__keywords" aria-hidden="true">
+                        <span>PRECEDENT</span>
+                        <span>ANALYSIS</span>
+                        <span>ADVOCACY</span>
+                    </div>
 
                 </div>
 
@@ -365,10 +403,12 @@
                 <div class="featured-matters__layout">
 
                     <!-- =================================================
-                 FEATURED CARDS
-            ================================================== -->
+                         FEATURED MAIN COLUMN & CARDS
+                    ================================================== -->
 
-                    <div class="featured-matters__grid">
+                    <div class="featured-matters__main">
+
+                        <div class="featured-matters__grid" id="featured-grid">
 
                         <!-- ---------------------------------------------
                      CARD 01 — REPORTED JUDGMENT
@@ -671,6 +711,11 @@
                             </div>
 
                         </article>
+
+                        </div>
+
+                        <!-- Pagination Controls -->
+                        <div class="featured-pagination pagination-controls" id="featured-pagination" aria-label="Featured matters pagination"></div>
 
                     </div>
 
@@ -1072,13 +1117,10 @@
                         verified public profile URL is available.
                     -->
 
-                    <span class="site-footer__social-placeholder" aria-hidden="true">
-                        in
-                    </span>
+                    <span class="site-footer__social-placeholder" aria-label="LinkedIn profile coming soon" title="LinkedIn profile coming soon" role="link" aria-disabled="true">in</span>
 
 
-                    <a href="https://maps.google.com/?q=Karkardooma+Courts+Delhi" target="_blank"
-                        rel="noopener noreferrer" aria-label="Karkardooma Courts, Delhi on Google Maps">
+                    <a href="https://maps.google.com/?q=Lawyers+Chamber+Block+Karkardooma+Courts+Delhi+110032" target="_blank" rel="noopener noreferrer" aria-label="Lawyers Chamber Block, Karkardooma Courts, Delhi on Google Maps">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"></path>
                             <circle cx="12" cy="9" r="2.5"></circle>
@@ -1147,12 +1189,12 @@
                             </svg>
                         </span>
 
-                        <span>
+                        <a href="https://maps.google.com/?q=Lawyers+Chamber+Block+Karkardooma+Courts+Delhi+110032" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
                             F-67, Lawyers Chamber Block,
                             First Floor,
                             Karkardooma Courts,
                             Delhi – 110032
-                        </span>
+                        </a>
 
                     </div>
 
@@ -1260,6 +1302,7 @@
          JAVASCRIPT
     ========================================================== -->
 
+    <script src="/js/featured-data.js" defer></script>
     <script src="/js/navigation.js" defer></script>
     <script src="/js/main.js" defer></script>
 

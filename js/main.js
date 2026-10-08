@@ -2,38 +2,148 @@ const backToTopButton = document.querySelector(".back-to-top");
 
 if (backToTopButton) {
     backToTopButton.addEventListener("click", () => {
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         window.scrollTo({
             top: 0,
-            behavior: "smooth"
+            behavior: prefersReducedMotion ? "auto" : "smooth"
         });
     });
 }
 
+// ==========================================================================
+// FEATURED MATTERS FILTERING & PAGINATION
+// ==========================================================================
 const featuredFilters = document.querySelectorAll(".featured-filter[data-filter]");
+const featuredGrid = document.getElementById("featured-grid");
+const featuredPagination = document.getElementById("featured-pagination");
 const featuredCards = document.querySelectorAll(".featured-card[data-category]");
 
-if (featuredFilters.length && featuredCards.length) {
-    const applyFeaturedFilter = (category) => {
-        featuredFilters.forEach((filter) => {
-            const isActive = filter.dataset.filter === category;
+if (featuredFilters.length && (featuredGrid || featuredCards.length)) {
+    const ITEMS_PER_PAGE = 6;
+    let currentCategory = "all";
+    let currentPage = 1;
 
-            filter.classList.toggle("is-active", isActive);
-            filter.setAttribute("aria-pressed", String(isActive));
-        });
+    const renderFeaturedCard = (item) => `
+        <article class="featured-card" data-category="${item.category}">
+            <a class="featured-card__image-link" href="${item.url}"
+                aria-label="Read details about ${item.title}">
+                <img class="featured-card__image" src="${item.image}"
+                    alt="${item.imageAlt || item.title}" width="800" height="500" loading="lazy"
+                    decoding="async">
+            </a>
+            <div class="featured-card__body">
+                <div class="featured-card__meta">
+                    <span class="featured-card__category">${item.categoryLabel}</span>
+                    <time class="featured-card__date" datetime="${item.date}">
+                        ${item.formattedDate || item.date}
+                    </time>
+                </div>
+                <h3 class="featured-card__title">
+                    <a href="${item.url}">${item.title}</a>
+                </h3>
+                <p class="featured-card__excerpt">${item.excerpt}</p>
+                <a class="featured-card__link" href="${item.url}">
+                    View Details <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </article>`;
 
-        featuredCards.forEach((card) => {
-            card.hidden = category !== "all" && card.dataset.category !== category;
-        });
+    const updateFeaturedView = (shouldScroll = false) => {
+        if (window.featuredMattersData && featuredGrid) {
+            const dataset = window.featuredMattersData;
+            const filtered = currentCategory === "all"
+                ? dataset
+                : dataset.filter(item => item.category === currentCategory);
+
+            const totalCount = filtered.length;
+            const totalPages = Math.max(1, Math.ceil(totalCount / ITEMS_PER_PAGE));
+
+            if (currentPage > totalPages) currentPage = 1;
+
+            const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+            const pageItems = filtered.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+            featuredGrid.innerHTML = pageItems.map(renderFeaturedCard).join("\n");
+
+            if (featuredPagination) {
+                if (totalPages <= 1) {
+                    featuredPagination.innerHTML = "";
+                    featuredPagination.style.display = "none";
+                } else {
+                    featuredPagination.style.display = "flex";
+                    let navHtml = `<button type="button" class="pagination-btn pagination-btn--prev" aria-label="Go to previous page" ${currentPage === 1 ? "disabled" : ""}>← Previous</button>`;
+
+                    for (let p = 1; p <= totalPages; p++) {
+                        navHtml += `<button type="button" class="pagination-btn ${p === currentPage ? "is-active" : ""}" data-page="${p}" aria-label="Go to page ${p}" ${p === currentPage ? 'aria-current="page"' : ""}>${p}</button>`;
+                    }
+
+                    navHtml += `<button type="button" class="pagination-btn pagination-btn--next" aria-label="Go to next page" ${currentPage === totalPages ? "disabled" : ""}>Next →</button>`;
+
+                    featuredPagination.innerHTML = navHtml;
+
+                    featuredPagination.querySelectorAll("[data-page]").forEach((btn) => {
+                        btn.addEventListener("click", () => {
+                            currentPage = Number(btn.dataset.page);
+                            updateFeaturedView(true);
+                        });
+                    });
+
+                    const prevBtn = featuredPagination.querySelector(".pagination-btn--prev");
+                    if (prevBtn) {
+                        prevBtn.addEventListener("click", () => {
+                            if (currentPage > 1) {
+                                currentPage--;
+                                updateFeaturedView(true);
+                            }
+                        });
+                    }
+
+                    const nextBtn = featuredPagination.querySelector(".pagination-btn--next");
+                    if (nextBtn) {
+                        nextBtn.addEventListener("click", () => {
+                            if (currentPage < totalPages) {
+                                currentPage++;
+                                updateFeaturedView(true);
+                            }
+                        });
+                    }
+                }
+            }
+        } else if (featuredCards.length) {
+            featuredCards.forEach((card) => {
+                card.hidden = currentCategory !== "all" && card.dataset.category !== currentCategory;
+            });
+        }
+
+        if (shouldScroll && featuredGrid) {
+            const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            featuredGrid.scrollIntoView({
+                behavior: prefersReducedMotion ? "auto" : "smooth",
+                block: "start"
+            });
+        }
     };
 
     featuredFilters.forEach((filter) => {
         filter.addEventListener("click", () => {
-            applyFeaturedFilter(filter.dataset.filter);
+            currentCategory = filter.dataset.filter;
+            currentPage = 1;
+
+            featuredFilters.forEach((btn) => {
+                const isActive = btn === filter;
+                btn.classList.toggle("is-active", isActive);
+                btn.setAttribute("aria-pressed", String(isActive));
+            });
+
+            updateFeaturedView(false);
         });
     });
 
     const activeFilter = document.querySelector(".featured-filter[aria-pressed='true']");
-    applyFeaturedFilter(activeFilter ? activeFilter.dataset.filter : "all");
+    if (activeFilter) {
+        currentCategory = activeFilter.dataset.filter;
+    }
+    updateFeaturedView(false);
 }
 
 // --- Basic Search Implementation ---
@@ -180,4 +290,43 @@ if (featuredFilters.length && featuredCards.length) {
     };
 
     searchButtons.forEach(btn => btn.addEventListener('click', openSearch));
+})();
+
+// ==========================================================================
+// CONTACT FORM HANDLER
+// ==========================================================================
+(() => {
+    const contactForm = document.querySelector("[data-contact-form]");
+    const contactStatus = document.querySelector("[data-contact-status]");
+
+    if (!contactForm) return;
+
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (!contactForm.reportValidity()) return;
+
+        const name = (contactForm.querySelector("#contact-name")?.value || "").trim();
+        const email = (contactForm.querySelector("#contact-email")?.value || "").trim();
+        const phone = (contactForm.querySelector("#contact-phone")?.value || "").trim();
+        const subjectValue = (contactForm.querySelector("#contact-subject")?.value || "").trim();
+        const message = (contactForm.querySelector("#contact-message")?.value || "").trim();
+
+        const mailSubject = encodeURIComponent(`[Legal Consultation Request] ${subjectValue} - ${name}`);
+        const mailBody = encodeURIComponent(
+            `Name: ${name}\n` +
+            `Email: ${email}\n` +
+            `Phone: ${phone || "Not provided"}\n` +
+            `Subject: ${subjectValue}\n\n` +
+            `Message:\n${message}\n`
+        );
+
+        if (contactStatus) {
+            contactStatus.textContent = "Your email application has opened with your message prepared. Please click 'Send' in your email client to dispatch your inquiry.";
+            contactStatus.style.color = "var(--color-burgundy, #6f1d2a)";
+            contactStatus.style.fontWeight = "600";
+            contactStatus.style.marginTop = "0.75rem";
+        }
+
+        window.location.href = `mailto:Sunilupadhayay5@gmail.com?subject=${mailSubject}&body=${mailBody}`;
+    });
 })();
