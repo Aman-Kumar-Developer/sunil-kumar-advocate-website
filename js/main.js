@@ -158,15 +158,15 @@ if (featuredFilters.length && (featuredGrid || featuredCards.length)) {
         "title": "Home",
         "type": "Page",
         "url": "/",
-        "snippet": "Official professional portfolio of Advocate Sunil Kumar, practicing before the Delhi High Court and District Courts.",
-        "keywords": "sunil kumar advocate upadhyay associates delhi high court karkardooma lawyer counsel portfolio"
+        "snippet": "Official professional portfolio of Advocate Sunil Kumar Upadhyay, practicing before the Delhi High Court and District Courts.",
+        "keywords": "sunil kumar upadhyay advocate upadhyay associates delhi high court karkardooma lawyer counsel portfolio"
     },
     {
-        "title": "About Advocate Sunil Kumar",
+        "title": "About Advocate Sunil Kumar Upadhyay",
         "type": "Page",
         "url": "/about/",
         "snippet": "Professional legal profile, litigation experience since 2012, advocacy background, bar memberships and chambers.",
-        "keywords": "about advocate sunil kumar experience qualifications karkardooma bar delhi high court profile credentials"
+        "keywords": "about advocate sunil kumar upadhyay experience qualifications karkardooma bar delhi high court profile credentials"
     },
     {
         "title": "Contact & Chamber Consultation",
@@ -179,7 +179,7 @@ if (featuredFilters.length && (featuredGrid || featuredCards.length)) {
         "title": "Privacy Policy",
         "type": "Page",
         "url": "/privacy-policy/",
-        "snippet": "Official privacy policy and client data protection practices of Advocate Sunil Kumar.",
+        "snippet": "Official privacy policy and client data protection practices of Advocate Sunil Kumar Upadhyay.",
         "keywords": "privacy policy data protection terms client confidentiality information security"
     },
     {
@@ -1310,7 +1310,7 @@ if (featuredFilters.length && (featuredGrid || featuredCards.length)) {
         const subjectValue = (contactForm.querySelector("#contact-subject")?.value || "").trim();
         const message = (contactForm.querySelector("#contact-message")?.value || "").trim();
 
-        const mailSubject = encodeURIComponent(`[Legal Consultation Request] ${subjectValue} - ${name}`);
+        const mailSubject = encodeURIComponent(`[Legal Consultation Request] ${subjectValue} - ${name} (Sunil Kumar Upadhyay)`);
         const mailBody = encodeURIComponent(
             `Name: ${name}\n` +
             `Email: ${email}\n` +

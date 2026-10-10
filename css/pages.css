@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* ============================================================
-   SUNIL KUMAR — HOMEPAGE
+   SUNIL KUMAR UPADHYAY — HOMEPAGE
    Visual implementation of the approved desktop/mobile design
    ============================================================ */
 
@@ -5360,6 +5360,32 @@ h3 {
 }
 
 @media (max-width: 900px) {
+    .insights-page .insights-hero .hero__inner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .insights-page .insights-hero .hero__content {
+        padding: 30px 20px 24px;
+    }
+
+    .insights-page .insights-hero .hero__title {
+        max-width: 440px;
+        font-size: clamp(32px, 6vw, 42px);
+        line-height: 0.98;
+    }
+
+    .insights-page .insights-hero .hero__description {
+        max-width: 100%;
+    }
+
+    .insights-title-desktop {
+        display: none;
+    }
+
+    .insights-title-mobile {
+        display: inline;
+    }
+
     .insights-layout {
         grid-template-columns: minmax(0, 1fr);
     }

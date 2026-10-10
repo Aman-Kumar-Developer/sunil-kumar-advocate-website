@@ -1,6 +1,6 @@
-# Advocate Sunil Kumar — Professional Website
+# Advocate Sunil Kumar Upadhyay — Professional Website
 
-> A production-oriented professional website developed for **Advocate Sunil Kumar**, with **UPADHYAY & ASSOCIATES** represented as the associated practice identity.
+> A production-oriented professional website developed for **Advocate Sunil Kumar Upadhyay**, with **UPADHYAY & ASSOCIATES** represented as the associated practice identity.
 
 This repository contains the source code and implementation for a real-world client website focused on professional identity, clear legal-service information, responsive user experience, accessibility, technical SEO, performance, and maintainability.
 
@@ -132,7 +132,7 @@ The implementation is designed around:
 - Substantive practice-area content
 - Search Console readiness
 
-The SEO strategy is entity-led: **Sunil Kumar + Advocate + Delhi / Delhi-NCR**, with practice-area and court context supporting the broader professional identity.
+The SEO strategy is entity-led: **Sunil Kumar Upadhyay + Advocate + Delhi / Delhi-NCR**, with practice-area and court context supporting the broader professional identity.
 
 ## Accessibility
 
@@ -330,8 +330,8 @@ This project represents practical experience in taking a client website from doc
 
 ## Client
 
-**Advocate Sunil Kumar**  
-**UPADHYAY & ASSOCIATES**  
+**Advocate Sunil Kumar Upadhyay**<br>
+**UPADHYAY & ASSOCIATES**<br>
 Delhi, India
 
 ## Disclaimer

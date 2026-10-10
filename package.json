@@ -1,7 +1,7 @@
 {
   "name": "adv-sunil-kumar-portfolio",
   "version": "1.0.0",
-  "description": "> A production-oriented professional website developed for **Advocate Sunil Kumar**, with **UPADHYAY & ASSOCIATES** represented as the associated practice identity.",
+  "description": "> A production-oriented professional website developed for **Advocate Sunil Kumar Upadhyay**, with **UPADHYAY & ASSOCIATES** represented as the associated practice identity.",
   "main": "index.js",
   "directories": {
     "doc": "docs"

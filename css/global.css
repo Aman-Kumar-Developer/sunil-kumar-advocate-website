@@ -1,6 +1,6 @@
 /* ==========================================================================
    GLOBAL SHARED SITE STYLES
-   Sunil Kumar, Advocate
+   Sunil Kumar Upadhyay, Advocate
    ========================================================================== */
 
 
@@ -1014,6 +1014,14 @@
 
     .site-footer__main {
         gap: 25px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 802px) {
+
+    .site-brand__name {
+        font-size: 10px;
     }
 }
 
